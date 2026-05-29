@@ -2,6 +2,7 @@
 static/
 storage/
 webfonts/
+social-share-image/
 *.txt
 *.php
 

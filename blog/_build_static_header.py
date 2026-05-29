@@ -22,6 +22,7 @@ LANG = {
     "lang.it-it": "Italiano",
     "lang.es-es": "Español",
     "lang.nl-nl": "Nederlands",
+    "lang.ru-ru": "Русский",
     "tool.gif_meme_maker": "GIF Meme Maker",
     "tool.meme_quotes_creator": "Meme Quotes Creator",
     "tool.note_card": "Note Card",
