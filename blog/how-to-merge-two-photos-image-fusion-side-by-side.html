@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -6,13 +6,13 @@
     <title>How to Merge Two Photos &amp; Put Images Side by Side – Image Fusion &amp; Photo Collage | ROCKIMG Blog</title>
     <meta name="description" content="Learn image fusion for two photos: how to put two images side by side, make a side by side photo or simple two-panel photo collage online. Free Merge Two Photos tool — private, in your browser.">
     <meta name="keywords" content="image fusion, how to put two images side by side, side by side photo, photo collage, merge two photos, combine two pictures, split photo online, diptych maker, horizontal photo merge">
+    <meta property="article:published_time" content="2026-04-23">
     <link rel="canonical" href="https://www.rockimg.com/blog/how-to-merge-two-photos-image-fusion-side-by-side.html">
     <meta property="og:title" content="How to Merge Two Photos &amp; Put Images Side by Side – Image Fusion | ROCKIMG Blog">
     <meta property="og:description" content="Put two images side by side with adjustable split — image fusion, side by side photos, and quick two-panel photo collage. Free, no upload to server.">
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://www.rockimg.com/blog/how-to-merge-two-photos-image-fusion-side-by-side.html">
     <meta property="og:site_name" content="ROCKIMG">
-    <meta property="article:published_time" content="2026-04-23">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="How to Merge Two Photos – Image Fusion &amp; Side by Side">
     <meta name="twitter:description" content="Merge two photos into one horizontal image with a draggable split — perfect for comparisons, diptychs, and collage-style layouts.">
@@ -35,7 +35,6 @@
             font-size: 2.4rem;
             margin-bottom: 0.5rem;
             color: #1a1a2e;
-            line-height: 1.2;
         }
         .blog-content h2 {
             font-size: 1.75rem;
@@ -48,6 +47,12 @@
             margin-top: 1.6rem;
             margin-bottom: 0.6rem;
             color: #333;
+        }
+        .blog-content h4 {
+            font-size: 1.12rem;
+            margin-top: 1.2rem;
+            margin-bottom: 0.55rem;
+            color: #334e68;
         }
         .blog-content p {
             margin-bottom: 1rem;
@@ -69,7 +74,7 @@
             height: auto;
             margin: 1.5rem auto;
             border-radius: 8px;
-            box-shadow: 0 3px 10px rgba(0,0,0,0.12);
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
             display: block;
         }
         .blog-content figure {
@@ -80,6 +85,22 @@
             color: #777;
             text-align: center;
             margin-top: -0.5rem;
+        }
+        .blog-content code {
+            padding: 0.12rem 0.4rem;
+            background: #f1f5f9;
+            border-radius: 4px;
+            font-size: 0.92em;
+            color: #c0392b;
+        }
+        .blog-content kbd {
+            display: inline-block;
+            padding: 0.1rem 0.45rem;
+            border: 1px solid #cbd5e1;
+            border-radius: 4px;
+            background: #f8fafc;
+            font-size: 0.85em;
+            box-shadow: 0 1px 0 #cbd5e1;
         }
         .publish-date {
             color: #888;
@@ -93,7 +114,10 @@
             margin: 1.5rem 0;
             border-radius: 0 8px 8px 0;
         }
-        .blog-content .tip p { margin: 0; font-size: 1rem; }
+        .blog-content .tip p {
+            margin: 0;
+            font-size: 1rem;
+        }
         .blog-content .warning {
             background-color: #fff8e1;
             border-left: 4px solid #ffc107;
@@ -101,7 +125,18 @@
             margin: 1.5rem 0;
             border-radius: 0 8px 8px 0;
         }
-        .blog-content .warning p { margin: 0; font-size: 1rem; }
+        .blog-content .warning p {
+            margin: 0;
+            font-size: 1rem;
+        }
+        .blog-content .example-box {
+            background: #f7fbff;
+            border: 1px solid #d8ebff;
+            border-left: 4px solid #4a90e2;
+            border-radius: 8px;
+            padding: 14px 16px;
+            margin: 14px 0;
+        }
         .blog-content .cta {
             text-align: center;
             margin: 2rem 0;
@@ -129,58 +164,25 @@
         .blog-content .cta a:hover {
             background-color: #003d82;
         }
-        .step-list {
-            counter-reset: step-counter;
-            list-style: none;
-            padding-left: 0;
-        }
-        .step-list li {
-            counter-increment: step-counter;
-            padding: 12px 14px 12px 52px;
-            margin-bottom: 10px;
-            background: #f8f9fa;
-            border-radius: 8px;
-            position: relative;
-            font-size: 1.05rem;
-            color: #444;
-        }
-        .step-list li::before {
-            content: counter(step-counter);
-            position: absolute;
-            left: 14px;
-            top: 50%;
-            transform: translateY(-50%);
-            background: #0056b3;
-            color: white;
-            width: 26px;
-            height: 26px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 0.85rem;
-            font-weight: 700;
-        }
-        .rules-grid {
+        .use-cases {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
             gap: 14px;
             margin: 1.2rem 0 1.6rem;
         }
-        .rule-card {
+        .use-case-card {
             background: #f8f9fa;
             border-radius: 8px;
             padding: 16px;
             border-top: 3px solid #0056b3;
         }
-        .rule-card strong {
+        .use-case-card strong {
             display: block;
             margin-bottom: 6px;
             color: #222;
-            font-size: 0.97rem;
         }
-        .rule-card p {
-            font-size: 0.9rem;
+        .use-case-card p {
+            font-size: 0.92rem;
             margin: 0;
             color: #666;
         }
@@ -193,13 +195,32 @@
             color: #0056b3;
             text-decoration: none;
         }
-        .breadcrumb a:hover { text-decoration: underline; }
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+        .blog-content .back-to-blog a {
+            font-weight: 500;
+            text-decoration: none;
+        }
+        .blog-content .back-to-blog a:hover {
+            text-decoration: underline;
+        }
         @media (max-width: 768px) {
-            .blog-content { padding: 15px; }
-            .blog-content h1 { font-size: 1.9rem; }
-            .blog-content h2 { font-size: 1.45rem; }
-            .blog-content h3 { font-size: 1.15rem; }
-            .rules-grid { grid-template-columns: 1fr; }
+            .blog-content {
+                padding: 15px;
+            }
+            .blog-content h1 {
+                font-size: 1.9rem;
+            }
+            .blog-content h2 {
+                font-size: 1.45rem;
+            }
+            .blog-content h3 {
+                font-size: 1.15rem;
+            }
+            .use-cases {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
     <script type="application/ld+json">
@@ -238,8 +259,7 @@
         <header>
             <div class="logo">
                 <a href="/" class="logo-link">
-                    <img src="/public/static/logo.png" alt="ROCKIMG" class="logo-image" width="40" height="40" decoding="async">
-                    <span class="logo-text">ROCKIMG</span>
+                    <img src="/public/static/logo.svg" alt="ROCKIMG" class="logo-image" width="150" height="25" decoding="async">
                 </a>
             </div>
             <nav class="menu">
@@ -256,6 +276,7 @@
                                 <a href="/note-cards.html" class="dropdown-item">Note Card</a>
                                 <a href="/speech-bubble-meme.html" class="dropdown-item">Speech Bubble Meme</a>
                                 <a href="/svg-gradient-generator.html" class="dropdown-item">SVG Gradient Generator</a>
+                                <a href="/emoji-combo.html" class="dropdown-item">Emoji Combo</a>
                             </div>
                 </div>
                 <div class="menu-group">
@@ -308,7 +329,10 @@
                         <a href="/gif-extractor.html" class="dropdown-item">GIF Frame Extractor</a>
                         <a href="/gif-to-apng.html" class="dropdown-item">GIF to APNG</a>
                         <a href="/gif-to-mp4.html" class="dropdown-item">GIF to MP4</a>
+                        <a href="/gif-to-livp.html" class="dropdown-item">GIF to Live Photo</a>
                         <a href="/gif-to-webp.html" class="dropdown-item">GIF to WebP</a>
+                        <a href="/livp-to-photo.html" class="dropdown-item">Live Photo to Photo</a>
+                        <a href="/livp-to-gif.html" class="dropdown-item">Live Photo to GIF</a>
                         <a href="/heic-converter.html" class="dropdown-item">HEIC Converter</a>
                         <a href="/heif-to-jpg.html" class="dropdown-item">HEIF to JPG</a>
                         <a href="/heif-to-png.html" class="dropdown-item">HEIF to PNG</a>
@@ -341,11 +365,16 @@
                         <a href="/ascii-to-picture.html" class="dropdown-item">ASCII to Picture</a>
                         <a href="/beauty-filter.html" class="dropdown-item">Beauty Filter</a>
                         <a href="/black-and-white.html" class="dropdown-item">Black and White</a>
+                        <a href="/ccd-style.html" class="dropdown-item">CCD Style</a>
+                        <a href="/rubbing-effect.html" class="dropdown-item">Rubbing Effect</a>
                         <a href="/color-blind-test.html" class="dropdown-item">Color Blind Test</a>
+                        <a href="/color-blindness-simulator.html" class="dropdown-item">Color Blindness Simulator</a>
                         <a href="/eye-test-chart.html" class="dropdown-item">Eye Test Chart</a>
                         <a href="/image-color.html" class="dropdown-item">Get Image Color</a>
+                        <a href="/image-coords.html" class="dropdown-item">Image Coordinate Picker</a>
                         <a href="/glitch-effect.html" class="dropdown-item">Glitch Effect</a>
                         <a href="/optical-illusion-generator.html" class="dropdown-item">Optical Illusion Generator</a>
+                        <a href="/motion-aftereffect-generator.html" class="dropdown-item">Motion Aftereffect Generator</a>
                         <a href="/image-filters.html" class="dropdown-item">Image Filters</a>
                         <a href="/image-to-pixel-art.html" class="dropdown-item">Image to Pixel Art</a>
                         <a href="/low-quality-image-maker.html" class="dropdown-item">Low Quality Image Maker</a>
@@ -392,6 +421,7 @@
                                 <a href="/note-cards.html" class="mobile-menu-item">Note Card</a>
                                 <a href="/speech-bubble-meme.html" class="mobile-menu-item">Speech Bubble Meme</a>
                                 <a href="/svg-gradient-generator.html" class="mobile-menu-item">SVG Gradient Generator</a>
+                                <a href="/emoji-combo.html" class="mobile-menu-item">Emoji Combo</a>
                         </div>
                     </div>
                     <div class="mobile-menu-section">
@@ -434,7 +464,10 @@
                         <a href="/gif-extractor.html" class="mobile-menu-item">GIF Frame Extractor</a>
                         <a href="/gif-to-apng.html" class="mobile-menu-item">GIF to APNG</a>
                         <a href="/gif-to-mp4.html" class="mobile-menu-item">GIF to MP4</a>
+                        <a href="/gif-to-livp.html" class="mobile-menu-item">GIF to Live Photo</a>
                         <a href="/gif-to-webp.html" class="mobile-menu-item">GIF to WebP</a>
+                        <a href="/livp-to-photo.html" class="mobile-menu-item">Live Photo to Photo</a>
+                        <a href="/livp-to-gif.html" class="mobile-menu-item">Live Photo to GIF</a>
                         <a href="/heic-converter.html" class="mobile-menu-item">HEIC Converter</a>
                         <a href="/heif-to-jpg.html" class="mobile-menu-item">HEIF to JPG</a>
                         <a href="/heif-to-png.html" class="mobile-menu-item">HEIF to PNG</a>
@@ -462,11 +495,16 @@
                         <a href="/ascii-to-picture.html" class="mobile-menu-item">ASCII to Picture</a>
                         <a href="/beauty-filter.html" class="mobile-menu-item">Beauty Filter</a>
                         <a href="/black-and-white.html" class="mobile-menu-item">Black and White</a>
+                        <a href="/ccd-style.html" class="mobile-menu-item">CCD Style</a>
+                        <a href="/rubbing-effect.html" class="mobile-menu-item">Rubbing Effect</a>
                         <a href="/color-blind-test.html" class="mobile-menu-item">Color Blind Test</a>
+                        <a href="/color-blindness-simulator.html" class="mobile-menu-item">Color Blindness Simulator</a>
                         <a href="/eye-test-chart.html" class="mobile-menu-item">Eye Test Chart</a>
                         <a href="/image-color.html" class="mobile-menu-item">Get Image Color</a>
+                        <a href="/image-coords.html" class="mobile-menu-item">Image Coordinate Picker</a>
                         <a href="/glitch-effect.html" class="mobile-menu-item">Glitch Effect</a>
                         <a href="/optical-illusion-generator.html" class="mobile-menu-item">Optical Illusion Generator</a>
+                        <a href="/motion-aftereffect-generator.html" class="mobile-menu-item">Motion Aftereffect Generator</a>
                         <a href="/image-filters.html" class="mobile-menu-item">Image Filters</a>
                         <a href="/image-to-pixel-art.html" class="mobile-menu-item">Image to Pixel Art</a>
                         <a href="/low-quality-image-maker.html" class="mobile-menu-item">Low Quality Image Maker</a>
@@ -498,192 +536,190 @@
 
 
 
-
         <main>
             <article class="blog-content" itemscope itemtype="https://schema.org/BlogPosting">
                 <nav class="breadcrumb" aria-label="Breadcrumb">
                     <a href="/">ROCKIMG</a> &rsaquo;
                     <a href="/blog.html">Blog</a> &rsaquo;
-                    <span>Merge Two Photos &amp; Side by Side Image Fusion</span>
+                    <span>How to Merge Two Photos &amp; Put Images Side by Side</span>
                 </nav>
+<h1 itemprop="headline">How to Merge Two Photos &amp; Put Images Side by Side – Image Fusion, Side by Side Photos &amp; Simple Photo Collage</h1>
+<p class="publish-date">Published on: <time datetime="2026-04-23" itemprop="datePublished">April 23, 2026</time></p>
 
-                <h1 itemprop="headline">How to Merge Two Photos &amp; Put Images Side by Side – Image Fusion, Side by Side Photos &amp; Simple Photo Collage</h1>
-                <p class="publish-date">Published on: <time datetime="2026-04-23" itemprop="datePublished">April 23, 2026</time></p>
+<p>You want a single picture that tells a story in two halves: a portrait next to a landscape, a &ldquo;before&rdquo; and &ldquo;after&rdquo;, a real photo beside a stylised version, or two product angles in one frame. In everyday language people search for <strong>how to put two images side by side</strong>, <strong>side by side photo</strong> layouts, or a quick <strong>photo collage</strong> with only two panels. In imaging terms, that is a form of <strong>image fusion</strong> at the layout level: two sources become one composite with a shared edge.</p>
+<p>ROCKIMG's free <a href="/merge-two-photos.html"><strong>Merge Two Photos</strong></a> tool does exactly that in the browser. You upload a left image and a right image, set where the seam should sit, and export one PNG — no desktop app and no upload to a server (processing stays on your device).</p>
 
-                <p>You want a single picture that tells a story in two halves: a portrait next to a landscape, a &ldquo;before&rdquo; and &ldquo;after&rdquo;, a real photo beside a stylised version, or two product angles in one frame. In everyday language people search for <strong>how to put two images side by side</strong>, <strong>side by side photo</strong> layouts, or a quick <strong>photo collage</strong> with only two panels. In imaging terms, that is a form of <strong>image fusion</strong> at the layout level: two sources become one composite with a shared edge.</p>
-                <p>ROCKIMG's free <a href="/merge-two-photos.html"><strong>Merge Two Photos</strong></a> tool does exactly that in the browser. You upload a left image and a right image, set where the seam should sit, and export one PNG — no desktop app and no upload to a server (processing stays on your device).</p>
+<div class="cta">
+    <p>Open the tool and try a side by side merge in under a minute.</p>
+    <a href="/merge-two-photos.html" target="_blank">Open Merge Two Photos</a>
+</div>
 
-                <div class="cta">
-                    <p>Open the tool and try a side by side merge in under a minute.</p>
-                    <a href="/merge-two-photos.html" target="_blank">Open Merge Two Photos</a>
-                </div>
+<h2>What &ldquo;Image Fusion&rdquo; Means Here (and What It Does Not)</h2>
+<p><strong>Image fusion</strong> can mean several different things. In scientific or HDR workflows it often implies pixel-level blending (for example merging exposures). This article uses the term in the broader sense many creators use when they Google it: <em>combining two images into one meaningful composite</em>.</p>
+<p>ROCKIMG's Merge Two Photos tool performs a <strong>horizontal fusion</strong> with an adjustable split:</p>
+<ul>
+    <li>Both photos are scaled so their <strong>heights match</strong> (using the shorter image's height as the common canvas height).</li>
+    <li>A <strong>split percentage</strong> (10%–90%) decides how much horizontal width comes from the <em>left</em> image versus the <em>right</em> image.</li>
+    <li>The result is a single wide image: a classic <strong>side by side photo</strong> or two-cell <strong>photo collage</strong> layout.</li>
+    <li>A subtle <strong>vertical guide line</strong> is drawn on the seam so you can see exactly where the two halves meet (useful for alignment and social crops).</li>
+</ul>
+<p>If you need stacked grids, many tiles, or overlapping layers with transparency, other workflows (or ROCKIMG's <a href="/images-combine.html">Images Combine</a> / <a href="/image-overlay.html">Image Overlay</a> tools) may fit better — more on that below.</p>
 
-                <h2>What &ldquo;Image Fusion&rdquo; Means Here (and What It Does Not)</h2>
-                <p><strong>Image fusion</strong> can mean several different things. In scientific or HDR workflows it often implies pixel-level blending (for example merging exposures). This article uses the term in the broader sense many creators use when they Google it: <em>combining two images into one meaningful composite</em>.</p>
-                <p>ROCKIMG's Merge Two Photos tool performs a <strong>horizontal fusion</strong> with an adjustable split:</p>
-                <ul>
-                    <li>Both photos are scaled so their <strong>heights match</strong> (using the shorter image's height as the common canvas height).</li>
-                    <li>A <strong>split percentage</strong> (10%–90%) decides how much horizontal width comes from the <em>left</em> image versus the <em>right</em> image.</li>
-                    <li>The result is a single wide image: a classic <strong>side by side photo</strong> or two-cell <strong>photo collage</strong> layout.</li>
-                    <li>A subtle <strong>vertical guide line</strong> is drawn on the seam so you can see exactly where the two halves meet (useful for alignment and social crops).</li>
-                </ul>
-                <p>If you need stacked grids, many tiles, or overlapping layers with transparency, other workflows (or ROCKIMG's <a href="/images-combine.html">Images Combine</a> / <a href="/image-overlay.html">Image Overlay</a> tools) may fit better — more on that below.</p>
+<h2>Why Create a Side by Side Photo or Two-Panel Collage?</h2>
+<p>Putting two images side by side is one of the most universal layouts on the web. It works because viewers compare left and right automatically.</p>
+<ul>
+    <li><strong>Before / after</strong> — fitness, renovations, skincare, cleaning, training progress.</li>
+    <li><strong>Comparisons</strong> — two products, two colourways, two maps, two charts as still images.</li>
+    <li><strong>Storytelling</strong> — &ldquo;expectation vs reality&rdquo;, meme formats, reaction pairs.</li>
+    <li><strong>Art and photography</strong> — diptychs, paired portraits, &ldquo;photo vs illustration&rdquo; experiments.</li>
+    <li><strong>Social and messaging</strong> — one file to post or send instead of two attachments.</li>
+</ul>
+<p>A two-panel <strong>photo collage</strong> is often enough; you do not always need a full multi-cell template app.</p>
 
-                <h2>Why Create a Side by Side Photo or Two-Panel Collage?</h2>
-                <p>Putting two images side by side is one of the most universal layouts on the web. It works because viewers compare left and right automatically.</p>
-                <ul>
-                    <li><strong>Before / after</strong> — fitness, renovations, skincare, cleaning, training progress.</li>
-                    <li><strong>Comparisons</strong> — two products, two colourways, two maps, two charts as still images.</li>
-                    <li><strong>Storytelling</strong> — &ldquo;expectation vs reality&rdquo;, meme formats, reaction pairs.</li>
-                    <li><strong>Art and photography</strong> — diptychs, paired portraits, &ldquo;photo vs illustration&rdquo; experiments.</li>
-                    <li><strong>Social and messaging</strong> — one file to post or send instead of two attachments.</li>
-                </ul>
-                <p>A two-panel <strong>photo collage</strong> is often enough; you do not always need a full multi-cell template app.</p>
+<h2>What the Merge Two Photos Tool Gives You</h2>
+<p>Here is a concise map of the features you actually get on the page:</p>
 
-                <h2>What the Merge Two Photos Tool Gives You</h2>
-                <p>Here is a concise map of the features you actually get on the page:</p>
+<div class="rules-grid">
+    <div class="rule-card">
+        <strong>Left &amp; right slots</strong>
+        <p>Clear placement for image A and image B — drag and drop or click to pick files.</p>
+    </div>
+    <div class="rule-card">
+        <strong>Split position slider</strong>
+        <p>Move the seam between 10% and 90% to favour more of the left or right picture.</p>
+    </div>
+    <div class="rule-card">
+        <strong>Matched height</strong>
+        <p>Both images scale to the same height so the seam is a straight vertical line.</p>
+    </div>
+    <div class="rule-card">
+        <strong>One-shot export</strong>
+        <p>Download a single PNG named <code>merged-photo.png</code> after you click Create.</p>
+    </div>
+    <div class="rule-card">
+        <strong>Built-in samples</strong>
+        <p>Try bundled examples (e.g. stylised blends and before/after style pairs) with one click.</p>
+    </div>
+    <div class="rule-card">
+        <strong>Local processing</strong>
+        <p>Images are handled in your browser; they are not sent to ROCKIMG for merging.</p>
+    </div>
+</div>
 
-                <div class="rules-grid">
-                    <div class="rule-card">
-                        <strong>Left &amp; right slots</strong>
-                        <p>Clear placement for image A and image B — drag and drop or click to pick files.</p>
-                    </div>
-                    <div class="rule-card">
-                        <strong>Split position slider</strong>
-                        <p>Move the seam between 10% and 90% to favour more of the left or right picture.</p>
-                    </div>
-                    <div class="rule-card">
-                        <strong>Matched height</strong>
-                        <p>Both images scale to the same height so the seam is a straight vertical line.</p>
-                    </div>
-                    <div class="rule-card">
-                        <strong>One-shot export</strong>
-                        <p>Download a single PNG named <code>merged-photo.png</code> after you click Create.</p>
-                    </div>
-                    <div class="rule-card">
-                        <strong>Built-in samples</strong>
-                        <p>Try bundled examples (e.g. stylised blends and before/after style pairs) with one click.</p>
-                    </div>
-                    <div class="rule-card">
-                        <strong>Local processing</strong>
-                        <p>Images are handled in your browser; they are not sent to ROCKIMG for merging.</p>
-                    </div>
-                </div>
+<h3>Example side by side results (tool samples)</h3>
+<p>These are the same style of outputs you can produce with the <a href="/merge-two-photos.html">Merge Two Photos</a> workshop — a real image paired with a stylised or alternate version, and a classic before/after <strong>side by side photo</strong>:</p>
+<figure>
+    <img src="/public/blog/real-cartoon-merged.jpg" alt="Side by side merge: real photo next to stylised cartoon-style image" loading="lazy" decoding="async">
+    <figcaption>Real photograph merged with a stylised look — a two-panel <strong>photo collage</strong> for &ldquo;photo vs illustration&rdquo; style <strong>image fusion</strong>.</figcaption>
+</figure>
+<figure>
+    <img src="/public/blog/before-after-merged.jpg" alt="Before and after side by side merged into one image" loading="lazy" decoding="async">
+    <figcaption>Before and after in a single frame — the layout people often mean when they search for <strong>how to put two images side by side</strong> for comparisons.</figcaption>
+</figure>
 
-                <h3>Example side by side results (tool samples)</h3>
-                <p>These are the same style of outputs you can produce with the <a href="/merge-two-photos.html">Merge Two Photos</a> workshop — a real image paired with a stylised or alternate version, and a classic before/after <strong>side by side photo</strong>:</p>
-                <figure>
-                    <img src="/public/blog/real-cartoon-merged.jpg" alt="Side by side merge: real photo next to stylised cartoon-style image" loading="lazy" decoding="async">
-                    <figcaption>Real photograph merged with a stylised look — a two-panel <strong>photo collage</strong> for &ldquo;photo vs illustration&rdquo; style <strong>image fusion</strong>.</figcaption>
-                </figure>
-                <figure>
-                    <img src="/public/blog/before-after-merged.jpg" alt="Before and after side by side merged into one image" loading="lazy" decoding="async">
-                    <figcaption>Before and after in a single frame — the layout people often mean when they search for <strong>how to put two images side by side</strong> for comparisons.</figcaption>
-                </figure>
+<h2>Step-by-Step: How to Put Two Images Side by Side</h2>
 
-                <h2>Step-by-Step: How to Put Two Images Side by Side</h2>
+<h3>Step 1 – Open the tool and add your images</h3>
+<p>Go to <a href="/merge-two-photos.html">Merge Two Photos</a>. You will see two upload areas:</p>
+<ul>
+    <li><strong>Left image</strong> — appears on the left side of the finished <strong>side by side photo</strong>.</li>
+    <li><strong>Right image</strong> — appears on the right side.</li>
+</ul>
+<p>For each slot you can either <strong>drag a file</strong> onto the dashed box or <strong>click</strong> the box to use your system's file picker. Common formats such as JPEG, PNG, WebP, and GIF (as a still) work in modern browsers as long as the file is a raster image.</p>
 
-                <h3>Step 1 – Open the tool and add your images</h3>
-                <p>Go to <a href="/merge-two-photos.html">Merge Two Photos</a>. You will see two upload areas:</p>
-                <ul>
-                    <li><strong>Left image</strong> — appears on the left side of the finished <strong>side by side photo</strong>.</li>
-                    <li><strong>Right image</strong> — appears on the right side.</li>
-                </ul>
-                <p>For each slot you can either <strong>drag a file</strong> onto the dashed box or <strong>click</strong> the box to use your system's file picker. Common formats such as JPEG, PNG, WebP, and GIF (as a still) work in modern browsers as long as the file is a raster image.</p>
+<div class="tip">
+    <p><strong>Tip:</strong> For a clean <strong>photo collage</strong>, start with two images that have similar lighting or colour temperature. The seam is sharp, not blended — so mismatched white balance can draw the eye.</p>
+</div>
 
-                <div class="tip">
-                    <p><strong>Tip:</strong> For a clean <strong>photo collage</strong>, start with two images that have similar lighting or colour temperature. The seam is sharp, not blended — so mismatched white balance can draw the eye.</p>
-                </div>
+<h3>Step 2 – Set the split position (the heart of the layout)</h3>
+<p>The <strong>Split position</strong> slider shows a percentage next to it. That value controls how the horizontal space is shared between the two sources after they are height-matched:</p>
+<ul>
+    <li>Near <strong>50%</strong> — a balanced diptych: each side contributes roughly half of the combined width (exact proportions still depend on each photo's aspect ratio after scaling).</li>
+    <li>Toward <strong>10%</strong> — emphasises the <em>right</em> image: the left strip is narrow.</li>
+    <li>Toward <strong>90%</strong> — emphasises the <em>left</em> image: the right strip is narrow.</li>
+</ul>
+<p>If you already merged once and then move the slider, the tool can <strong>re-render</strong> the preview so you can fine-tune without re-uploading.</p>
 
-                <h3>Step 2 – Set the split position (the heart of the layout)</h3>
-                <p>The <strong>Split position</strong> slider shows a percentage next to it. That value controls how the horizontal space is shared between the two sources after they are height-matched:</p>
-                <ul>
-                    <li>Near <strong>50%</strong> — a balanced diptych: each side contributes roughly half of the combined width (exact proportions still depend on each photo's aspect ratio after scaling).</li>
-                    <li>Toward <strong>10%</strong> — emphasises the <em>right</em> image: the left strip is narrow.</li>
-                    <li>Toward <strong>90%</strong> — emphasises the <em>left</em> image: the right strip is narrow.</li>
-                </ul>
-                <p>If you already merged once and then move the slider, the tool can <strong>re-render</strong> the preview so you can fine-tune without re-uploading.</p>
+<h3>Step 3 – Click Create</h3>
+<p>When both slots hold an image, the <strong>Create</strong> button activates. Click it to build the composite on a canvas and show the result under the <strong>Result</strong> heading.</p>
+<p>Expect a thin <strong>white vertical line</strong> on the boundary between the two halves. It is intentional feedback for the seam; if you need an invisible join for print, you can crop one pixel in any editor or use a tool that omits guides.</p>
 
-                <h3>Step 3 – Click Create</h3>
-                <p>When both slots hold an image, the <strong>Create</strong> button activates. Click it to build the composite on a canvas and show the result under the <strong>Result</strong> heading.</p>
-                <p>Expect a thin <strong>white vertical line</strong> on the boundary between the two halves. It is intentional feedback for the seam; if you need an invisible join for print, you can crop one pixel in any editor or use a tool that omits guides.</p>
+<h3>Step 4 – Download</h3>
+<p>Press <strong>Download</strong> to save <code>merged-photo.png</code>. PNG preserves sharp edges and supports lossless quality — a good default for a <strong>side by side photo</strong> that may be re-compressed by social platforms later.</p>
 
-                <h3>Step 4 – Download</h3>
-                <p>Press <strong>Download</strong> to save <code>merged-photo.png</code>. PNG preserves sharp edges and supports lossless quality — a good default for a <strong>side by side photo</strong> that may be re-compressed by social platforms later.</p>
+<h3>Step 5 – Optional: start from samples</h3>
+<p>Scroll to the samples section on the tool page. Click a sample card to load a matched left/right pair instantly. This is the fastest way to understand how <strong>image fusion</strong> behaves with contrasting subjects (for example illustrated vs photographic looks).</p>
 
-                <h3>Step 5 – Optional: start from samples</h3>
-                <p>Scroll to the samples section on the tool page. Click a sample card to load a matched left/right pair instantly. This is the fastest way to understand how <strong>image fusion</strong> behaves with contrasting subjects (for example illustrated vs photographic looks).</p>
+<h2>Practical Layout Ideas (Side by Side &amp; Collage-Style)</h2>
 
-                <h2>Practical Layout Ideas (Side by Side &amp; Collage-Style)</h2>
+<h3>Before and after, same camera position</h3>
+<p>Shoot or crop both frames with the same horizon line and focal length. The vertical seam will feel &ldquo;professional&rdquo; because the geometry lines up.</p>
 
-                <h3>Before and after, same camera position</h3>
-                <p>Shoot or crop both frames with the same horizon line and focal length. The vertical seam will feel &ldquo;professional&rdquo; because the geometry lines up.</p>
+<h3>Two products on white</h3>
+<p>If both originals sit on plain backgrounds, your <strong>photo collage</strong> reads like a catalog row — excellent for marketplaces and pitch decks.</p>
 
-                <h3>Two products on white</h3>
-                <p>If both originals sit on plain backgrounds, your <strong>photo collage</strong> reads like a catalog row — excellent for marketplaces and pitch decks.</p>
+<h3>Portrait + wide establishing shot</h3>
+<p>Use the split slider to give the landscape more width (lower percentage if the landscape is on the left, or higher if it is on the right — experiment until the story feels balanced).</p>
 
-                <h3>Portrait + wide establishing shot</h3>
-                <p>Use the split slider to give the landscape more width (lower percentage if the landscape is on the left, or higher if it is on the right — experiment until the story feels balanced).</p>
+<h3>Meme and social formats</h3>
+<p>Many viral formats are simply two panels in one image. Merging once avoids carousel limits on some platforms and guarantees order (left always first).</p>
 
-                <h3>Meme and social formats</h3>
-                <p>Many viral formats are simply two panels in one image. Merging once avoids carousel limits on some platforms and guarantees order (left always first).</p>
+<h2>Merge Two Photos vs Other ROCKIMG Tools</h2>
+<p>Choosing the right tool saves time:</p>
+<ul>
+    <li><strong>Merge Two Photos</strong> — exactly two sources, horizontal <strong>side by side</strong> layout, adjustable seam, PNG out.</li>
+    <li><a href="/images-combine.html"><strong>Images Combine</strong></a> — useful when you need a different multi-image workflow (for example stacking or grids, depending on that tool's options).</li>
+    <li><a href="/image-overlay.html"><strong>Image Overlay</strong></a> — when you need transparency, watermarks, or one picture on top of another rather than beside it.</li>
+    <li><a href="/add-border.html"><strong>Add Border</strong></a> — after merging, add margin or a frame so the seam breathes in feeds.</li>
+</ul>
 
-                <h2>Merge Two Photos vs Other ROCKIMG Tools</h2>
-                <p>Choosing the right tool saves time:</p>
-                <ul>
-                    <li><strong>Merge Two Photos</strong> — exactly two sources, horizontal <strong>side by side</strong> layout, adjustable seam, PNG out.</li>
-                    <li><a href="/images-combine.html"><strong>Images Combine</strong></a> — useful when you need a different multi-image workflow (for example stacking or grids, depending on that tool's options).</li>
-                    <li><a href="/image-overlay.html"><strong>Image Overlay</strong></a> — when you need transparency, watermarks, or one picture on top of another rather than beside it.</li>
-                    <li><a href="/add-border.html"><strong>Add Border</strong></a> — after merging, add margin or a frame so the seam breathes in feeds.</li>
-                </ul>
+<h2>Important Notes &amp; Limitations</h2>
+<ul>
+    <li><strong>Two images only.</strong> This page is purpose-built for pairs, not full multi-cell collage templates.</li>
+    <li><strong>Export is PNG.</strong> The download uses a PNG data URL; convert to JPEG or WebP afterward if you need smaller files for email.</li>
+    <li><strong>Seam line in the file.</strong> The preview includes a visible vertical divider at the join.</li>
+    <li><strong>Very large files.</strong> Huge camera RAW exports may be slow or memory-heavy in the browser — consider resizing first with an <a href="/image-compressor.html">Image Compressor</a> pass if your device struggles.</li>
+    <li><strong>Session memory.</strong> Like other client-side editors, refreshing the tab clears unsaved work — download before you close.</li>
+</ul>
 
-                <h2>Important Notes &amp; Limitations</h2>
-                <ul>
-                    <li><strong>Two images only.</strong> This page is purpose-built for pairs, not full multi-cell collage templates.</li>
-                    <li><strong>Export is PNG.</strong> The download uses a PNG data URL; convert to JPEG or WebP afterward if you need smaller files for email.</li>
-                    <li><strong>Seam line in the file.</strong> The preview includes a visible vertical divider at the join.</li>
-                    <li><strong>Very large files.</strong> Huge camera RAW exports may be slow or memory-heavy in the browser — consider resizing first with an <a href="/image-compressor.html">Image Compressor</a> pass if your device struggles.</li>
-                    <li><strong>Session memory.</strong> Like other client-side editors, refreshing the tab clears unsaved work — download before you close.</li>
-                </ul>
+<div class="warning">
+    <p><strong>Note:</strong> This workflow is layout fusion (stitching and cropping into one canvas), not multi-band pixel blending. For soft, graduated blending between exposures you would use dedicated HDR or exposure-fusion software.</p>
+</div>
 
-                <div class="warning">
-                    <p><strong>Note:</strong> This workflow is layout fusion (stitching and cropping into one canvas), not multi-band pixel blending. For soft, graduated blending between exposures you would use dedicated HDR or exposure-fusion software.</p>
-                </div>
+<h2>Frequently Asked Questions</h2>
 
-                <h2>Frequently Asked Questions</h2>
+<h3>How do I put two images side by side without Photoshop?</h3>
+<p>Use <a href="/merge-two-photos.html">Merge Two Photos</a>: upload left and right files, adjust the split, click Create, and download <code>merged-photo.png</code>. Everything runs in the browser.</p>
 
-                <h3>How do I put two images side by side without Photoshop?</h3>
-                <p>Use <a href="/merge-two-photos.html">Merge Two Photos</a>: upload left and right files, adjust the split, click Create, and download <code>merged-photo.png</code>. Everything runs in the browser.</p>
+<h3>Is a side by side photo the same as a photo collage?</h3>
+<p>A <strong>photo collage</strong> usually means several photos arranged in a layout. A <strong>side by side photo</strong> is the smallest collage pattern — two cells in one row. This tool targets that pattern specifically.</p>
 
-                <h3>Is a side by side photo the same as a photo collage?</h3>
-                <p>A <strong>photo collage</strong> usually means several photos arranged in a layout. A <strong>side by side photo</strong> is the smallest collage pattern — two cells in one row. This tool targets that pattern specifically.</p>
+<h3>Does this tool do automatic face blending or HDR fusion?</h3>
+<p>No. It performs a clear left/right composite with an adjustable vertical seam. For HDR-style <strong>image fusion</strong> you need specialised software; for simple pairing and comparison layouts, this tool is ideal.</p>
 
-                <h3>Does this tool do automatic face blending or HDR fusion?</h3>
-                <p>No. It performs a clear left/right composite with an adjustable vertical seam. For HDR-style <strong>image fusion</strong> you need specialised software; for simple pairing and comparison layouts, this tool is ideal.</p>
+<h3>Can I merge more than two pictures?</h3>
+<p>Not on this page — it is strictly a pair merger. Chain merges (A+B, then result+C) are possible manually but quality control is easier with a multi-image combiner such as <a href="/images-combine.html">Images Combine</a>.</p>
 
-                <h3>Can I merge more than two pictures?</h3>
-                <p>Not on this page — it is strictly a pair merger. Chain merges (A+B, then result+C) are possible manually but quality control is easier with a multi-image combiner such as <a href="/images-combine.html">Images Combine</a>.</p>
+<h3>Will my photos be uploaded to the cloud?</h3>
+<p>Processing is designed to stay local in the browser. You should still avoid sensitive documents on shared computers, and always follow your organisation's data rules.</p>
 
-                <h3>Will my photos be uploaded to the cloud?</h3>
-                <p>Processing is designed to stay local in the browser. You should still avoid sensitive documents on shared computers, and always follow your organisation's data rules.</p>
+<h2>Conclusion</h2>
+<p>Whether you call it <strong>image fusion</strong>, a <strong>side by side photo</strong>, or a minimal <strong>photo collage</strong>, the goal is the same: one export that carries two visual ideas in a single frame. ROCKIMG's <a href="/merge-two-photos.html">Merge Two Photos</a> keeps that workflow short — upload, slide the split, create, download — while respecting privacy by working locally in your browser.</p>
+<p>If you compare products, document change over time, or build meme and story formats, try the built-in samples first, then drop in your own pair and nudge the percentage until the composition feels right.</p>
 
-                <h2>Conclusion</h2>
-                <p>Whether you call it <strong>image fusion</strong>, a <strong>side by side photo</strong>, or a minimal <strong>photo collage</strong>, the goal is the same: one export that carries two visual ideas in a single frame. ROCKIMG's <a href="/merge-two-photos.html">Merge Two Photos</a> keeps that workflow short — upload, slide the split, create, download — while respecting privacy by working locally in your browser.</p>
-                <p>If you compare products, document change over time, or build meme and story formats, try the built-in samples first, then drop in your own pair and nudge the percentage until the composition feels right.</p>
+<div class="cta">
+    <p>Merge your first side by side image now.</p>
+    <a href="/merge-two-photos.html" target="_blank">Try Merge Two Photos Free</a>
+</div>
 
-                <div class="cta">
-                    <p>Merge your first side by side image now.</p>
-                    <a href="/merge-two-photos.html" target="_blank">Try Merge Two Photos Free</a>
-                </div>
-
-                <h2>Related Tools</h2>
-                <ul>
-                    <li><a href="/images-combine.html">Images Combine</a> — combine multiple images when you need more than two panels or a different arrangement.</li>
-                    <li><a href="/image-overlay.html">Image Overlay</a> — layer one image on another with transparency.</li>
-                    <li><a href="/add-border.html">Add Border</a> — add padding or frames around a finished composite.</li>
-                    <li><a href="/image-compressor.html">Image Compressor</a> — shrink large merges before sharing.</li>
-                </ul>
-                <p class="back-to-blog" style="margin-top:2.5rem;"><a href="/blog.html">← Back to all tutorials</a></p>
+<h2>Related Tools</h2>
+<ul>
+    <li><a href="/images-combine.html">Images Combine</a> — combine multiple images when you need more than two panels or a different arrangement.</li>
+    <li><a href="/image-overlay.html">Image Overlay</a> — layer one image on another with transparency.</li>
+    <li><a href="/add-border.html">Add Border</a> — add padding or frames around a finished composite.</li>
+    <li><a href="/image-compressor.html">Image Compressor</a> — shrink large merges before sharing.</li>
+</ul>
+<p class="back-to-blog" style="margin-top:2.5rem;"><a href="/blog.html">← Back to all tutorials</a></p>
             </article>
         </main>
         <footer class="footer">

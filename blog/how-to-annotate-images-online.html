@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>How to Annotate Images Online – Shapes, Arrows &amp; Text | ROCKIMG Blog</title>
+    <meta name="description" content="Learn how to annotate images online with rectangles, arrows, lines, freehand paths, and click-to-place text. Free Annotate Image tool—browser-only, no upload.">
+    <meta name="keywords" content="annotate image online,image annotation tool,draw arrow on screenshot,add text to image,screenshot markup,freehand annotation,annotate photo online">
+    <meta property="article:published_time" content="2026-06-20">
+    <link rel="canonical" href="https://www.rockimg.com/blog/how-to-annotate-images-online.html">
+    <meta property="og:title" content="How to Annotate Images Online – Shapes, Arrows &amp; Text | ROCKIMG Blog">
+    <meta property="og:description" content="Draw shapes, arrows, and custom text on photos with ROCKIMG Annotate Image—free, private, runs in your browser.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.rockimg.com/blog/how-to-annotate-images-online.html">
+    <meta property="og:site_name" content="ROCKIMG">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="How to Annotate Images Online">
+    <meta name="twitter:description" content="Rectangles, arrows, freehand, and click-to-place text—free Annotate Image tool at annotate-image.html.">
+    <link rel="stylesheet" href="/public/static/all.min.css">
+    <link rel="stylesheet" type="text/css" href="/public/static/style.css?v=1">
+    <style>
+        main {
+            background-color: #fff;
+        }
+        .footer {
+            margin-top: 0;
+        }
+        .blog-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.7;
+        }
+        .blog-content h1 {
+            font-size: 2.4rem;
+            margin-bottom: 0.5rem;
+            color: #1a1a2e;
+        }
+        .blog-content h2 {
+            font-size: 1.75rem;
+            margin-top: 2.2rem;
+            margin-bottom: 0.9rem;
+            color: #0056b3;
+        }
+        .blog-content h3 {
+            font-size: 1.3rem;
+            margin-top: 1.6rem;
+            margin-bottom: 0.6rem;
+            color: #333;
+        }
+        .blog-content h4 {
+            font-size: 1.12rem;
+            margin-top: 1.2rem;
+            margin-bottom: 0.55rem;
+            color: #334e68;
+        }
+        .blog-content p {
+            margin-bottom: 1rem;
+            font-size: 1.05rem;
+            color: #444;
+        }
+        .blog-content ul,
+        .blog-content ol {
+            margin-bottom: 1.4rem;
+            padding-left: 1.8rem;
+        }
+        .blog-content li {
+            margin-bottom: 0.55rem;
+            font-size: 1.05rem;
+            color: #444;
+        }
+        .blog-content img {
+            max-width: 100%;
+            height: auto;
+            margin: 1.5rem auto;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
+            display: block;
+        }
+        .blog-content figure {
+            margin: 1.5rem 0;
+        }
+        .blog-content figcaption {
+            font-size: 0.9rem;
+            color: #777;
+            text-align: center;
+            margin-top: -0.5rem;
+        }
+        .blog-content code {
+            padding: 0.12rem 0.4rem;
+            background: #f1f5f9;
+            border-radius: 4px;
+            font-size: 0.92em;
+            color: #c0392b;
+        }
+        .blog-content kbd {
+            display: inline-block;
+            padding: 0.1rem 0.45rem;
+            border: 1px solid #cbd5e1;
+            border-radius: 4px;
+            background: #f8fafc;
+            font-size: 0.85em;
+            box-shadow: 0 1px 0 #cbd5e1;
+        }
+        .publish-date {
+            color: #888;
+            font-size: 0.9rem;
+            margin-bottom: 1.6rem;
+        }
+        .blog-content .tip {
+            background-color: #e8f4fd;
+            border-left: 4px solid #2196f3;
+            padding: 14px 16px;
+            margin: 1.5rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+        .blog-content .tip p {
+            margin: 0;
+            font-size: 1rem;
+        }
+        .blog-content .warning {
+            background-color: #fff8e1;
+            border-left: 4px solid #ffc107;
+            padding: 14px 16px;
+            margin: 1.5rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+        .blog-content .warning p {
+            margin: 0;
+            font-size: 1rem;
+        }
+        .blog-content .example-box {
+            background: #f7fbff;
+            border: 1px solid #d8ebff;
+            border-left: 4px solid #4a90e2;
+            border-radius: 8px;
+            padding: 14px 16px;
+            margin: 14px 0;
+        }
+        .blog-content .cta {
+            text-align: center;
+            margin: 2rem 0;
+            padding: 1.6rem;
+            background: linear-gradient(135deg, #f0f8ff 0%, #e8f4fd 100%);
+            border-radius: 10px;
+            border: 1px solid #d0e8f8;
+        }
+        .blog-content .cta p {
+            margin-bottom: 0.8rem;
+            font-size: 1.05rem;
+            color: #333;
+        }
+        .blog-content .cta a {
+            display: inline-block;
+            padding: 11px 26px;
+            background-color: #0056b3;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: background-color 0.25s;
+        }
+        .blog-content .cta a:hover {
+            background-color: #003d82;
+        }
+        .use-cases {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 14px;
+            margin: 1.2rem 0 1.6rem;
+        }
+        .use-case-card {
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 16px;
+            border-top: 3px solid #0056b3;
+        }
+        .use-case-card strong {
+            display: block;
+            margin-bottom: 6px;
+            color: #222;
+        }
+        .use-case-card p {
+            font-size: 0.92rem;
+            margin: 0;
+            color: #666;
+        }
+        .breadcrumb {
+            font-size: 0.88rem;
+            color: #888;
+            margin-bottom: 1.2rem;
+        }
+        .breadcrumb a {
+            color: #0056b3;
+            text-decoration: none;
+        }
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+        .blog-content .back-to-blog a {
+            font-weight: 500;
+            text-decoration: none;
+        }
+        .blog-content .back-to-blog a:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 768px) {
+            .blog-content {
+                padding: 15px;
+            }
+            .blog-content h1 {
+                font-size: 1.9rem;
+            }
+            .blog-content h2 {
+                font-size: 1.45rem;
+            }
+            .blog-content h3 {
+                font-size: 1.15rem;
+            }
+            .use-cases {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "How to Annotate Images Online – Shapes, Arrows and Text",
+      "description": "Guide to annotating photos and screenshots with shapes, arrows, freehand paths, and custom text using the free ROCKIMG Annotate Image tool.",
+      "url": "https://www.rockimg.com/blog/how-to-annotate-images-online.html",
+      "datePublished": "2026-06-20",
+      "dateModified": "2026-06-20",
+      "author": {
+        "@type": "Organization",
+        "name": "ROCKIMG",
+        "url": "https://www.rockimg.com"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "ROCKIMG",
+        "url": "https://www.rockimg.com",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.rockimg.com/public/static/logo.png"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.rockimg.com/blog/how-to-annotate-images-online.html"
+      },
+      "keywords": "annotate image online, image annotation tool, draw arrow on screenshot, add text to image, screenshot markup"
+    }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <a href="/" class="logo-link">
+                    <img src="/public/static/logo.svg" alt="ROCKIMG" class="logo-image" width="150" height="25" decoding="async">
+                </a>
+            </div>
+            <nav class="menu">
+                <div class="menu-group">
+                    <button class="menu-item menu-trigger" type="button">
+                        Image creation
+                        <svg class="arrow-icon" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                            <div class="menu-dropdown">
+                                <a href="/gif-meme-maker.html" class="dropdown-item">GIF Meme Maker</a>
+                                <a href="/meme-quotes.html" class="dropdown-item">Meme Quotes Creator</a>
+                                <a href="/note-cards.html" class="dropdown-item">Note Card</a>
+                                <a href="/speech-bubble-meme.html" class="dropdown-item">Speech Bubble Meme</a>
+                                <a href="/svg-gradient-generator.html" class="dropdown-item">SVG Gradient Generator</a>
+                                <a href="/emoji-combo.html" class="dropdown-item">Emoji Combo</a>
+                            </div>
+                </div>
+                <div class="menu-group">
+                    <button class="menu-item menu-trigger" type="button">
+                        Image editing
+                        <svg class="arrow-icon" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <div class="menu-dropdown dropdown-wide">
+                        <a href="/add-border.html" class="dropdown-item">Add Border</a>
+                        <a href="/add-captions.html" class="dropdown-item">Add Captions</a>
+                        <a href="/add-text-to-gif.html" class="dropdown-item">Add Text to GIF</a>
+                        <a href="/annotate-image.html" class="dropdown-item">Annotate Image</a>
+                        <a href="/blur-photo.html" class="dropdown-item">Blur Photo</a>
+                        <a href="/circle-image.html" class="dropdown-item">Circle Image</a>
+                        <a href="/combine-gifs.html" class="dropdown-item">Combine GIFs</a>
+                        <a href="/exif-remover.html" class="dropdown-item">EXIF Remover</a>
+                        <a href="/gif-cropper.html" class="dropdown-item">GIF Cropper</a>
+                        <a href="/highlight-image.html" class="dropdown-item">Highlight Image</a>
+                        <a href="/image-authenticity-checker.html" class="dropdown-item">Image Authenticity Checker</a>
+                        <a href="/image-compressor.html" class="dropdown-item">Image Compressor</a>
+                        <a href="/image-file-renamer.html" class="dropdown-item">Image File Renamer</a>
+                        <a href="/image-overlay.html" class="dropdown-item">Image Overlay</a>
+                        <a href="/image-splitter.html" class="dropdown-item">Image Splitter</a>
+                        <a href="/images-combine.html" class="dropdown-item">Images Combine</a>
+                        <a href="/watermark-detector.html" class="dropdown-item">Invisible Watermark Checker</a>
+                        <a href="/merge-two-photos.html" class="dropdown-item">Merge Two Photos</a>
+                        <a href="/mirror-picture.html" class="dropdown-item">Mirror Picture</a>
+                        <a href="/water-reflection-generator.html" class="dropdown-item">Water Reflection Generator</a>
+                        <a href="/photo-mosaic.html" class="dropdown-item">Photo Mosaic</a>
+                        <a href="/rounded-corners.html" class="dropdown-item">Rounded Corners</a>
+                        <a href="/stop-gif.html" class="dropdown-item">Stop GIF</a>
+                    </div>
+                </div>
+                <div class="menu-group">
+                    <button class="menu-item menu-trigger" type="button">
+                        Image conversion
+                        <svg class="arrow-icon" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <div class="menu-dropdown dropdown-wide">
+                        <a href="/apng-to-gif.html" class="dropdown-item">APNG to GIF</a>
+                        <a href="/avif-converter.html" class="dropdown-item">AVIF Converter</a>
+                        <a href="/bmp-to-jpg.html" class="dropdown-item">BMP to JPG</a>
+                        <a href="/bmp-to-png.html" class="dropdown-item">BMP to PNG</a>
+                        <a href="/eps-to-jpg.html" class="dropdown-item">EPS to JPG</a>
+                        <a href="/eps-to-png.html" class="dropdown-item">EPS to PNG</a>
+                        <a href="/gif-extractor.html" class="dropdown-item">GIF Frame Extractor</a>
+                        <a href="/gif-to-apng.html" class="dropdown-item">GIF to APNG</a>
+                        <a href="/gif-to-mp4.html" class="dropdown-item">GIF to MP4</a>
+                        <a href="/gif-to-livp.html" class="dropdown-item">GIF to Live Photo</a>
+                        <a href="/gif-to-webp.html" class="dropdown-item">GIF to WebP</a>
+                        <a href="/livp-to-photo.html" class="dropdown-item">Live Photo to Photo</a>
+                        <a href="/livp-to-gif.html" class="dropdown-item">Live Photo to GIF</a>
+                        <a href="/heic-converter.html" class="dropdown-item">HEIC Converter</a>
+                        <a href="/heif-to-jpg.html" class="dropdown-item">HEIF to JPG</a>
+                        <a href="/heif-to-png.html" class="dropdown-item">HEIF to PNG</a>
+                        <a href="/jpg-to-bmp.html" class="dropdown-item">JPG to BMP</a>
+                        <a href="/jpg-to-eps.html" class="dropdown-item">JPG to EPS</a>
+                        <a href="/mov-to-gif.html" class="dropdown-item">MOV to GIF</a>
+                        <a href="/mp4-to-gif.html" class="dropdown-item">MP4 to GIF</a>
+                        <a href="/mp4-to-webp.html" class="dropdown-item">MP4 to WebP</a>
+                        <a href="/mp3-album-cover.html" class="dropdown-item">MP3 Album Cover (Add)</a>
+                        <a href="/mp3-cover-extract.html" class="dropdown-item">MP3 Cover Extract</a>
+                        <a href="/png-to-bmp.html" class="dropdown-item">PNG to BMP</a>
+                        <a href="/png-to-eps.html" class="dropdown-item">PNG to EPS</a>
+                        <a href="/tiff-to-jpg.html" class="dropdown-item">TIFF Converter</a>
+                        <a href="/video-frame.html" class="dropdown-item">Video Frame Extractor</a>
+                        <a href="/webp-converter.html" class="dropdown-item">WebP Converter</a>
+                        <a href="/webp-extractor.html" class="dropdown-item">WebP Frame Extractor</a>
+                        <a href="/webp-to-gif.html" class="dropdown-item">WebP to GIF</a>
+                        <a href="/webp-to-mp4.html" class="dropdown-item">WebP to MP4</a>
+                    </div>
+                </div>
+                <div class="menu-group menu-group-right">
+                    <button class="menu-item menu-trigger" type="button">
+                        Image color & art
+                        <svg class="arrow-icon" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <div class="menu-dropdown dropdown-wide">
+                        <a href="/add-noise.html" class="dropdown-item">Add Noise</a>
+                        <a href="/ascii-to-picture.html" class="dropdown-item">ASCII to Picture</a>
+                        <a href="/beauty-filter.html" class="dropdown-item">Beauty Filter</a>
+                        <a href="/black-and-white.html" class="dropdown-item">Black and White</a>
+                        <a href="/ccd-style.html" class="dropdown-item">CCD Style</a>
+                        <a href="/rubbing-effect.html" class="dropdown-item">Rubbing Effect</a>
+                        <a href="/color-blind-test.html" class="dropdown-item">Color Blind Test</a>
+                        <a href="/color-blindness-simulator.html" class="dropdown-item">Color Blindness Simulator</a>
+                        <a href="/eye-test-chart.html" class="dropdown-item">Eye Test Chart</a>
+                        <a href="/image-color.html" class="dropdown-item">Get Image Color</a>
+                        <a href="/image-coords.html" class="dropdown-item">Image Coordinate Picker</a>
+                        <a href="/glitch-effect.html" class="dropdown-item">Glitch Effect</a>
+                        <a href="/optical-illusion-generator.html" class="dropdown-item">Optical Illusion Generator</a>
+                        <a href="/motion-aftereffect-generator.html" class="dropdown-item">Motion Aftereffect Generator</a>
+                        <a href="/image-filters.html" class="dropdown-item">Image Filters</a>
+                        <a href="/image-to-pixel-art.html" class="dropdown-item">Image to Pixel Art</a>
+                        <a href="/low-quality-image-maker.html" class="dropdown-item">Low Quality Image Maker</a>
+                        <a href="/perler-bead-pattern-maker.html" class="dropdown-item">Perler Bead Pattern Maker</a>
+                        <a href="/invert-image.html" class="dropdown-item">Invert Image</a>
+                        <a href="/picture-to-ascii.html" class="dropdown-item">Picture to ASCII</a>
+                        <a href="/pictures-to-draw.html" class="dropdown-item">Pictures to Draw</a>
+                        <a href="/vectorize-image.html" class="dropdown-item">Vectorize Image</a>
+                    </div>
+                </div>
+            </nav>
+            <div class="location-select-container">
+                <a href="#" class="location-select" aria-label="Language">
+                    <span>Language</span>
+                    <svg class="arrow-icon" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+                <div class="location-dropdown">
+                    <a class="location-option is-active" href="/" aria-current="true">English</a>
+                    <a class="location-option" href="/de-de">Deutsch</a>
+                    <a class="location-option" href="/fr-fr">Français</a>
+                    <a class="location-option" href="/ja-jp">日本語</a>
+                    <a class="location-option" href="/zh-cn">中文</a>
+                    <a class="location-option" href="/ko-kr">한국어</a>
+                    <a class="location-option" href="/it-it">Italiano</a>
+                    <a class="location-option" href="/es-es">Español</a>
+                    <a class="location-option" href="/nl-nl">Nederlands</a>
+                    <a class="location-option" href="/ru-ru">Русский</a>
+                </div>
+            </div>
+            <button class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="mobile-menu">
+                <div class="mobile-menu-content">
+                    <div class="mobile-menu-section">
+                        <button type="button" class="mobile-menu-title" aria-expanded="false">Image creation</button>
+                        <div class="mobile-menu-items">
+                                <a href="/gif-meme-maker.html" class="mobile-menu-item">GIF Meme Maker</a>
+                                <a href="/meme-quotes.html" class="mobile-menu-item">Meme Quotes Creator</a>
+                                <a href="/note-cards.html" class="mobile-menu-item">Note Card</a>
+                                <a href="/speech-bubble-meme.html" class="mobile-menu-item">Speech Bubble Meme</a>
+                                <a href="/svg-gradient-generator.html" class="mobile-menu-item">SVG Gradient Generator</a>
+                                <a href="/emoji-combo.html" class="mobile-menu-item">Emoji Combo</a>
+                        </div>
+                    </div>
+                    <div class="mobile-menu-section">
+                        <button type="button" class="mobile-menu-title" aria-expanded="false">Image editing</button>
+                        <div class="mobile-menu-items">
+                        <a href="/add-border.html" class="mobile-menu-item">Add Border</a>
+                        <a href="/add-captions.html" class="mobile-menu-item">Add Captions</a>
+                        <a href="/add-text-to-gif.html" class="mobile-menu-item">Add Text to GIF</a>
+                        <a href="/annotate-image.html" class="mobile-menu-item">Annotate Image</a>
+                        <a href="/blur-photo.html" class="mobile-menu-item">Blur Photo</a>
+                        <a href="/circle-image.html" class="mobile-menu-item">Circle Image</a>
+                        <a href="/combine-gifs.html" class="mobile-menu-item">Combine GIFs</a>
+                        <a href="/exif-remover.html" class="mobile-menu-item">EXIF Remover</a>
+                        <a href="/gif-cropper.html" class="mobile-menu-item">GIF Cropper</a>
+                        <a href="/highlight-image.html" class="mobile-menu-item">Highlight Image</a>
+                        <a href="/image-authenticity-checker.html" class="mobile-menu-item">Image Authenticity Checker</a>
+                        <a href="/image-compressor.html" class="mobile-menu-item">Image Compressor</a>
+                        <a href="/image-file-renamer.html" class="mobile-menu-item">Image File Renamer</a>
+                        <a href="/image-overlay.html" class="mobile-menu-item">Image Overlay</a>
+                        <a href="/image-splitter.html" class="mobile-menu-item">Image Splitter</a>
+                        <a href="/images-combine.html" class="mobile-menu-item">Images Combine</a>
+                        <a href="/watermark-detector.html" class="mobile-menu-item">Invisible Watermark Checker</a>
+                        <a href="/merge-two-photos.html" class="mobile-menu-item">Merge Two Photos</a>
+                        <a href="/mirror-picture.html" class="mobile-menu-item">Mirror Picture</a>
+                        <a href="/water-reflection-generator.html" class="mobile-menu-item">Water Reflection Generator</a>
+                        <a href="/photo-mosaic.html" class="mobile-menu-item">Photo Mosaic</a>
+                        <a href="/rounded-corners.html" class="mobile-menu-item">Rounded Corners</a>
+                        <a href="/stop-gif.html" class="mobile-menu-item">Stop GIF</a>
+                        </div>
+                    </div>
+                    <div class="mobile-menu-section">
+                        <button type="button" class="mobile-menu-title" aria-expanded="false">Image conversion</button>
+                        <div class="mobile-menu-items">
+                        <a href="/apng-to-gif.html" class="mobile-menu-item">APNG to GIF</a>
+                        <a href="/avif-converter.html" class="mobile-menu-item">AVIF Converter</a>
+                        <a href="/bmp-to-jpg.html" class="mobile-menu-item">BMP to JPG</a>
+                        <a href="/bmp-to-png.html" class="mobile-menu-item">BMP to PNG</a>
+                        <a href="/eps-to-jpg.html" class="mobile-menu-item">EPS to JPG</a>
+                        <a href="/eps-to-png.html" class="mobile-menu-item">EPS to PNG</a>
+                        <a href="/gif-extractor.html" class="mobile-menu-item">GIF Frame Extractor</a>
+                        <a href="/gif-to-apng.html" class="mobile-menu-item">GIF to APNG</a>
+                        <a href="/gif-to-mp4.html" class="mobile-menu-item">GIF to MP4</a>
+                        <a href="/gif-to-livp.html" class="mobile-menu-item">GIF to Live Photo</a>
+                        <a href="/gif-to-webp.html" class="mobile-menu-item">GIF to WebP</a>
+                        <a href="/livp-to-photo.html" class="mobile-menu-item">Live Photo to Photo</a>
+                        <a href="/livp-to-gif.html" class="mobile-menu-item">Live Photo to GIF</a>
+                        <a href="/heic-converter.html" class="mobile-menu-item">HEIC Converter</a>
+                        <a href="/heif-to-jpg.html" class="mobile-menu-item">HEIF to JPG</a>
+                        <a href="/heif-to-png.html" class="mobile-menu-item">HEIF to PNG</a>
+                        <a href="/jpg-to-bmp.html" class="mobile-menu-item">JPG to BMP</a>
+                        <a href="/jpg-to-eps.html" class="mobile-menu-item">JPG to EPS</a>
+                        <a href="/mov-to-gif.html" class="mobile-menu-item">MOV to GIF</a>
+                        <a href="/mp4-to-gif.html" class="mobile-menu-item">MP4 to GIF</a>
+                        <a href="/mp4-to-webp.html" class="mobile-menu-item">MP4 to WebP</a>
+                        <a href="/mp3-album-cover.html" class="mobile-menu-item">MP3 Album Cover (Add)</a>
+                        <a href="/mp3-cover-extract.html" class="mobile-menu-item">MP3 Cover Extract</a>
+                        <a href="/png-to-bmp.html" class="mobile-menu-item">PNG to BMP</a>
+                        <a href="/png-to-eps.html" class="mobile-menu-item">PNG to EPS</a>
+                        <a href="/tiff-to-jpg.html" class="mobile-menu-item">TIFF Converter</a>
+                        <a href="/video-frame.html" class="mobile-menu-item">Video Frame Extractor</a>
+                        <a href="/webp-converter.html" class="mobile-menu-item">WebP Converter</a>
+                        <a href="/webp-extractor.html" class="mobile-menu-item">WebP Frame Extractor</a>
+                        <a href="/webp-to-gif.html" class="mobile-menu-item">WebP to GIF</a>
+                        <a href="/webp-to-mp4.html" class="mobile-menu-item">WebP to MP4</a>
+                        </div>
+                    </div>
+                    <div class="mobile-menu-section">
+                        <button type="button" class="mobile-menu-title" aria-expanded="false">Image color & art</button>
+                        <div class="mobile-menu-items">
+                        <a href="/add-noise.html" class="mobile-menu-item">Add Noise</a>
+                        <a href="/ascii-to-picture.html" class="mobile-menu-item">ASCII to Picture</a>
+                        <a href="/beauty-filter.html" class="mobile-menu-item">Beauty Filter</a>
+                        <a href="/black-and-white.html" class="mobile-menu-item">Black and White</a>
+                        <a href="/ccd-style.html" class="mobile-menu-item">CCD Style</a>
+                        <a href="/rubbing-effect.html" class="mobile-menu-item">Rubbing Effect</a>
+                        <a href="/color-blind-test.html" class="mobile-menu-item">Color Blind Test</a>
+                        <a href="/color-blindness-simulator.html" class="mobile-menu-item">Color Blindness Simulator</a>
+                        <a href="/eye-test-chart.html" class="mobile-menu-item">Eye Test Chart</a>
+                        <a href="/image-color.html" class="mobile-menu-item">Get Image Color</a>
+                        <a href="/image-coords.html" class="mobile-menu-item">Image Coordinate Picker</a>
+                        <a href="/glitch-effect.html" class="mobile-menu-item">Glitch Effect</a>
+                        <a href="/optical-illusion-generator.html" class="mobile-menu-item">Optical Illusion Generator</a>
+                        <a href="/motion-aftereffect-generator.html" class="mobile-menu-item">Motion Aftereffect Generator</a>
+                        <a href="/image-filters.html" class="mobile-menu-item">Image Filters</a>
+                        <a href="/image-to-pixel-art.html" class="mobile-menu-item">Image to Pixel Art</a>
+                        <a href="/low-quality-image-maker.html" class="mobile-menu-item">Low Quality Image Maker</a>
+                        <a href="/perler-bead-pattern-maker.html" class="mobile-menu-item">Perler Bead Pattern Maker</a>
+                        <a href="/invert-image.html" class="mobile-menu-item">Invert Image</a>
+                        <a href="/picture-to-ascii.html" class="mobile-menu-item">Picture to ASCII</a>
+                        <a href="/pictures-to-draw.html" class="mobile-menu-item">Pictures to Draw</a>
+                        <a href="/vectorize-image.html" class="mobile-menu-item">Vectorize Image</a>
+                        </div>
+                    </div>
+                    <div class="mobile-menu-section mobile-menu-lang">
+                        <button type="button" class="mobile-menu-title" aria-expanded="false">Language</button>
+                        <div class="mobile-menu-items">
+                        <a class="mobile-menu-item is-active" href="/" aria-current="true">English</a>
+                        <a class="mobile-menu-item" href="/de-de">Deutsch</a>
+                        <a class="mobile-menu-item" href="/fr-fr">Français</a>
+                        <a class="mobile-menu-item" href="/ja-jp">日本語</a>
+                        <a class="mobile-menu-item" href="/zh-cn">中文</a>
+                        <a class="mobile-menu-item" href="/ko-kr">한국어</a>
+                        <a class="mobile-menu-item" href="/it-it">Italiano</a>
+                        <a class="mobile-menu-item" href="/es-es">Español</a>
+                        <a class="mobile-menu-item" href="/nl-nl">Nederlands</a>
+                        <a class="mobile-menu-item" href="/ru-ru">Русский</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+
+
+        <main>
+            <article class="blog-content" itemscope itemtype="https://schema.org/BlogPosting">
+                <nav class="breadcrumb" aria-label="Breadcrumb">
+                    <a href="/">ROCKIMG</a> &rsaquo;
+                    <a href="/blog.html">Blog</a> &rsaquo;
+                    <span>How to Annotate Images Online</span>
+                </nav>
+<h1>How to Annotate Images Online – Shapes, Arrows &amp; Text</h1>
+<p>Need to explain a screenshot, mark up a photo, or add callouts to a tutorial image? ROCKIMG’s free <a href="/annotate-image.html">Annotate Image</a> tool at <strong>annotate-image.html</strong> lets you draw rectangles, ellipses, arrows, lines, and freehand paths—or click anywhere to place custom text with your own color and size. Everything runs in your browser; files are not uploaded to ROCKIMG servers.</p>
+<p class="publish-date">Published on: June 20, 2026</p>
+
+<figure>
+    <img src="/public/static/samples/annotate-image.jpg" alt="Example of an annotated vintage sheet music page with green and pink rectangle callouts" loading="lazy" width="800" height="450">
+    <figcaption>Sample output from <a href="/annotate-image.html">Annotate Image</a>: rectangle callouts with stroke and optional labels—ideal for screenshots and instructional images.</figcaption>
+</figure>
+
+<div class="cta">
+    <p>Draw shapes, arrows, and text on any photo—free, private, in your browser.</p>
+    <a href="/annotate-image.html" target="_blank" rel="noopener noreferrer">Try Annotate Image</a>
+</div>
+
+<h2>What is image annotation?</h2>
+<p><strong>Image annotation</strong> means adding visual marks on top of a picture: boxes around UI elements, arrows pointing to buttons, circles around faces, or text explaining a step. Unlike editing the photo itself (cropping, filters, color), annotation layers communicate <em>where to look</em> and <em>what it means</em>.</p>
+<p>Common use cases include:</p>
+<ul>
+    <li><strong>Software tutorials</strong> — arrows and rectangles on screenshots.</li>
+    <li><strong>Bug reports</strong> — highlight the broken control or error message.</li>
+    <li><strong>Design feedback</strong> — mark spacing, alignment, or copy issues.</li>
+    <li><strong>Education</strong> — label parts of a diagram or map.</li>
+    <li><strong>Social posts</strong> — quick callouts on memes or product photos.</li>
+</ul>
+
+<h2>What the Annotate Image tool offers</h2>
+<p>On <a href="/annotate-image.html">annotate-image.html</a>, you upload once, mark up in a side-by-side workspace (settings on the left, preview on the right), then apply and download a PNG. Supported formats include JPG, PNG, WebP, and other common images up to 20&nbsp;MB.</p>
+<ul>
+    <li><strong>Six drawing tools</strong> — Rectangle, Ellipse, Arrow, Line, Freehand, and Text.</li>
+    <li><strong>Shape styling</strong> — stroke color, optional fill with opacity, stroke width (1–12&nbsp;px), solid or dashed lines.</li>
+    <li><strong>Click-to-type text</strong> — select Text mode, click on the image, type your caption, press Enter; choose text color and font size (10–72&nbsp;px) before placing.</li>
+    <li><strong>Multiple annotations</strong> — add as many shapes and text labels as you need before applying.</li>
+    <li><strong>Undo Last &amp; Clear All</strong> — fix mistakes without re-uploading.</li>
+    <li><strong>Apply Annotations</strong> — render all marks into a full-resolution output canvas.</li>
+    <li><strong>Local processing</strong> — your image stays on your device during editing.</li>
+</ul>
+
+<h2>Step-by-step: annotate an image online</h2>
+
+<h3>Step 1: Upload your image</h3>
+<p>Open <a href="/annotate-image.html">annotate-image.html</a> and drag your file onto the upload zone, or click to browse. The image appears in the preview panel on the right.</p>
+
+<h3>Step 2: Choose a tool</h3>
+<p>In the left <strong>Annotation Settings</strong> panel, pick the mode that fits your goal:</p>
+<ul>
+    <li><strong>Rectangle</strong> — drag a box around a button, paragraph, or region.</li>
+    <li><strong>Ellipse</strong> — circle an icon, face, or round badge.</li>
+    <li><strong>Arrow</strong> — drag from start to end to show direction or flow.</li>
+    <li><strong>Line</strong> — underline text or connect two points with a straight segment.</li>
+    <li><strong>Freehand</strong> — sketch irregular paths or handwritten-style marks.</li>
+    <li><strong>Text</strong> — click on the image to type a standalone label at that spot.</li>
+</ul>
+
+<h3>Step 3: Customize stroke, fill, and line style</h3>
+<p>For shape tools, adjust <strong>Stroke</strong> color, optional <strong>Fill</strong> with opacity, <strong>Stroke Width</strong>, and <strong>Line Style</strong> (solid or dashed). Green or red strokes work well on neutral backgrounds; semi-transparent fill can emphasize an area without hiding content.</p>
+<p>For <strong>Text</strong> mode, the panel switches to <strong>Text Color</strong> and <strong>Font Size</strong>. Set these before clicking on the image.</p>
+
+<h3>Step 4: Draw or place text on the image</h3>
+<p>Click and drag on the preview for shapes, arrows, lines, and freehand paths. For text, single-click where you want the label to start, type in the inline input, then press <strong>Enter</strong> to confirm (Esc cancels). Repeat to add more annotations.</p>
+
+<h3>Step 5: Apply and download</h3>
+<p>When you are satisfied, click <strong>Apply Annotations</strong>. The result appears below the workspace. Click <strong>Download</strong> to save <code>annotated-image.png</code> at full resolution.</p>
+
+<div class="tip">
+    <p><strong>Tip:</strong> Use <strong>Undo Last</strong> to remove the most recent mark, or <strong>Clear All</strong> to start over on the same upload without reloading the file.</p>
+</div>
+
+<h2>Best tools for common annotation tasks</h2>
+<div class="example-box">
+    <p><strong>Point to a menu item:</strong> Arrow tool, 2–3&nbsp;px stroke, high-contrast color (red or green).</p>
+</div>
+<div class="example-box">
+    <p><strong>Box a form field:</strong> Rectangle, no fill or light fill at 20–30% opacity, dashed border optional.</p>
+</div>
+<div class="example-box">
+    <p><strong>Label a step number:</strong> Text tool, 24–32&nbsp;px, white or yellow on dark UI, black on light backgrounds.</p>
+</div>
+<div class="example-box">
+    <p><strong>Circle a profile avatar:</strong> Ellipse with stroke only, stroke width 3–4&nbsp;px.</p>
+</div>
+<div class="example-box">
+    <p><strong>Sketch a rough path:</strong> Freehand for curved connectors or hand-drawn emphasis.</p>
+</div>
+
+<h2>Annotate Image vs. other ROCKIMG tools</h2>
+<p>Choose the tool that matches your goal:</p>
+<ul>
+    <li><strong><a href="/annotate-image.html">Annotate Image</a></strong> — shapes, arrows, lines, freehand, and click-to-place text for explanations and callouts.</li>
+    <li><strong><a href="/highlight-image.html">Highlight Image</a></strong> — semi-transparent color washes over text; content stays visible underneath.</li>
+    <li><strong><a href="/blur-photo.html">Blur Photo</a></strong> — hide faces, names, or sensitive data instead of marking them.</li>
+    <li><strong><a href="/add-border.html">Add Border</a></strong> — decorative frames around the whole image, not internal markup.</li>
+</ul>
+<p>For tutorial screenshots and UI walkthroughs, Annotate Image is usually the fastest option because arrows and text live in one workspace.</p>
+
+<h2>Tips for clean, professional annotations</h2>
+<ul>
+    <li>Stick to <strong>one or two stroke colors</strong> per image so callouts look intentional, not cluttered.</li>
+    <li>Keep arrow lines <strong>short and direct</strong>—point the head at the exact pixel you mean.</li>
+    <li>Use <strong>dashed rectangles</strong> for “suggested” areas and solid lines for confirmed issues.</li>
+    <li>Place text labels <strong>near</strong> the subject but not on top of critical detail when possible.</li>
+    <li>Preview at full size before downloading; thin strokes on 4K screenshots may need a wider stroke width.</li>
+    <li>Save the original unmarked file separately if stakeholders may ask for a clean version later.</li>
+</ul>
+
+<h2>Privacy and format notes</h2>
+<p>Processing happens in your browser using JavaScript and the Canvas API. ROCKIMG does not store uploaded files on its servers for this tool. Export is PNG to preserve sharp lines and text; re-save as JPG elsewhere if you need a smaller file for email.</p>
+
+<h2>Conclusion</h2>
+<p>You do not need desktop software to <strong>annotate images online</strong>. ROCKIMG’s <a href="/annotate-image.html">Annotate Image</a> tool combines rectangles, ellipses, arrows, lines, freehand drawing, and click-to-place text in one private, browser-based workflow—with undo, multiple marks per file, and a full-resolution PNG download.</p>
+
+<div class="cta">
+    <p>Mark up your next screenshot in minutes.</p>
+    <a href="/annotate-image.html" target="_blank" rel="noopener noreferrer">Open Annotate Image</a>
+</div>
+<p class="back-to-blog" style="margin-top:2.5rem;"><a href="/blog.html">← Back to all tutorials</a></p>
+            </article>
+        </main>
+        <footer class="footer">
+            <nav class="footer-nav">
+                <a href="/blog.html">Blog</a>
+                <a href="/tools.html">Tools</a>
+                <a href="/about.html">About Us</a>
+                <a href="/privacy.html">Privacy Policy</a>
+                <a href="/terms.html">Terms of Service</a>
+            </nav>
+            <p>&copy; 2026 ROCKIMG. All rights reserved.</p>
+        </footer>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const menuBtn = document.querySelector('.mobile-menu-btn');
+                const mobileMenu = document.querySelector('.mobile-menu');
+                if (!menuBtn || !mobileMenu) return;
+                function syncMobileMenuScrollLock() {
+                    document.documentElement.classList.toggle('mobile-menu-open', mobileMenu.classList.contains('active'));
+                }
+                menuBtn.addEventListener('click', function() {
+                    this.classList.toggle('active');
+                    mobileMenu.classList.toggle('active');
+                    syncMobileMenuScrollLock();
+                });
+                document.addEventListener('click', function(e) {
+                    if (!mobileMenu.contains(e.target) && !menuBtn.contains(e.target)) {
+                        mobileMenu.classList.remove('active');
+                        menuBtn.classList.remove('active');
+                        syncMobileMenuScrollLock();
+                    }
+                });
+            });
+        </script>
+    </div>
+<script defer src="/public/static/mobile-menu-accordion.js"></script>
+</body>
+</html>

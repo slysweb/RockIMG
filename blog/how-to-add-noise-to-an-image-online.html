@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -6,138 +6,220 @@
     <title>How to Add Noise to an Image: Noise Texture, Gaussian Noise &amp; Film Grain | ROCKIMG Blog</title>
     <meta name="description" content="Learn how to add noise to an image for film grain and noise texture. Covers Gaussian noise, intensity, grain size, and the free Add Noise tool in your browser.">
     <meta name="keywords" content="how to add noise to an image, add noise to image, noise texture, gaussian noise, film grain, photo noise, image noise online, add grain to photo">
+    <meta property="article:published_time" content="2026-04-20">
     <link rel="canonical" href="https://www.rockimg.com/blog/how-to-add-noise-to-an-image-online.html">
     <meta property="og:title" content="How to Add Noise to an Image: Gaussian Noise &amp; Noise Texture | ROCKIMG Blog">
     <meta property="og:description" content="Add noise to an image online: Gaussian noise, noise texture, and grain controls—preview locally and download.">
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://www.rockimg.com/blog/how-to-add-noise-to-an-image-online.html">
     <meta property="og:site_name" content="ROCKIMG">
-    <meta property="article:published_time" content="2026-04-20">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="How to Add Noise to an Image Online">
     <meta name="twitter:description" content="Noise texture, Gaussian noise, and film-style grain—free Add Noise tool in your browser.">
     <link rel="stylesheet" href="/public/static/all.min.css">
     <link rel="stylesheet" type="text/css" href="/public/static/style.css?v=1">
     <style>
-        main{
+        main {
             background-color: #fff;
         }
-        .footer{
+        .footer {
             margin-top: 0;
         }
         .blog-content {
             max-width: 800px;
             margin: 0 auto;
             padding: 20px;
-            line-height: 1.6;
+            line-height: 1.7;
         }
-        
         .blog-content h1 {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-            color: #333;
+            font-size: 2.4rem;
+            margin-bottom: 0.5rem;
+            color: #1a1a2e;
         }
-        
         .blog-content h2 {
-            font-size: 1.8rem;
-            margin-top: 2rem;
-            margin-bottom: 1rem;
+            font-size: 1.75rem;
+            margin-top: 2.2rem;
+            margin-bottom: 0.9rem;
             color: #0056b3;
         }
-        
         .blog-content h3 {
-            font-size: 1.4rem;
-            margin-top: 1.5rem;
-            margin-bottom: 0.75rem;
+            font-size: 1.3rem;
+            margin-top: 1.6rem;
+            margin-bottom: 0.6rem;
             color: #333;
         }
-        
+        .blog-content h4 {
+            font-size: 1.12rem;
+            margin-top: 1.2rem;
+            margin-bottom: 0.55rem;
+            color: #334e68;
+        }
         .blog-content p {
             margin-bottom: 1rem;
-            font-size: 1.1rem;
+            font-size: 1.05rem;
+            color: #444;
         }
-
-        .publish-date {
-            color: #888;
-            font-size: 0.95rem;
-            margin-bottom: 1.25rem;
+        .blog-content ul,
+        .blog-content ol {
+            margin-bottom: 1.4rem;
+            padding-left: 1.8rem;
         }
-        
-        .blog-content ul, .blog-content ol {
-            margin-bottom: 1.5rem;
-            padding-left: 2rem;
-        }
-        
         .blog-content li {
-            margin-bottom: 0.5rem;
+            margin-bottom: 0.55rem;
+            font-size: 1.05rem;
+            color: #444;
         }
-        
         .blog-content img {
             max-width: 100%;
             height: auto;
             margin: 1.5rem auto;
             border-radius: 8px;
-            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
             display: block;
         }
-
         .blog-content figure {
             margin: 1.5rem 0;
         }
-
         .blog-content figcaption {
-            font-size: 0.95rem;
-            color: #666;
+            font-size: 0.9rem;
+            color: #777;
             text-align: center;
-            margin-top: -0.75rem;
+            margin-top: -0.5rem;
         }
-        
+        .blog-content code {
+            padding: 0.12rem 0.4rem;
+            background: #f1f5f9;
+            border-radius: 4px;
+            font-size: 0.92em;
+            color: #c0392b;
+        }
+        .blog-content kbd {
+            display: inline-block;
+            padding: 0.1rem 0.45rem;
+            border: 1px solid #cbd5e1;
+            border-radius: 4px;
+            background: #f8fafc;
+            font-size: 0.85em;
+            box-shadow: 0 1px 0 #cbd5e1;
+        }
+        .publish-date {
+            color: #888;
+            font-size: 0.9rem;
+            margin-bottom: 1.6rem;
+        }
         .blog-content .tip {
-            background-color: #e1f5fe;
-            border-left: 4px solid #03a9f4;
-            padding: 15px;
-            margin: 20px 0;
+            background-color: #e8f4fd;
+            border-left: 4px solid #2196f3;
+            padding: 14px 16px;
+            margin: 1.5rem 0;
             border-radius: 0 8px 8px 0;
         }
-        
+        .blog-content .tip p {
+            margin: 0;
+            font-size: 1rem;
+        }
+        .blog-content .warning {
+            background-color: #fff8e1;
+            border-left: 4px solid #ffc107;
+            padding: 14px 16px;
+            margin: 1.5rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+        .blog-content .warning p {
+            margin: 0;
+            font-size: 1rem;
+        }
+        .blog-content .example-box {
+            background: #f7fbff;
+            border: 1px solid #d8ebff;
+            border-left: 4px solid #4a90e2;
+            border-radius: 8px;
+            padding: 14px 16px;
+            margin: 14px 0;
+        }
         .blog-content .cta {
             text-align: center;
             margin: 2rem 0;
-            padding: 1.5rem;
-            background-color: #f0f8ff;
-            border-radius: 8px;
+            padding: 1.6rem;
+            background: linear-gradient(135deg, #f0f8ff 0%, #e8f4fd 100%);
+            border-radius: 10px;
+            border: 1px solid #d0e8f8;
         }
-        
+        .blog-content .cta p {
+            margin-bottom: 0.8rem;
+            font-size: 1.05rem;
+            color: #333;
+        }
         .blog-content .cta a {
             display: inline-block;
-            padding: 10px 20px;
+            padding: 11px 26px;
             background-color: #0056b3;
             color: white;
             text-decoration: none;
-            border-radius: 4px;
-            font-weight: bold;
-            transition: background-color 0.3s;
+            border-radius: 6px;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: background-color 0.25s;
         }
-        
         .blog-content .cta a:hover {
             background-color: #003d82;
         }
-        
+        .use-cases {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 14px;
+            margin: 1.2rem 0 1.6rem;
+        }
+        .use-case-card {
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 16px;
+            border-top: 3px solid #0056b3;
+        }
+        .use-case-card strong {
+            display: block;
+            margin-bottom: 6px;
+            color: #222;
+        }
+        .use-case-card p {
+            font-size: 0.92rem;
+            margin: 0;
+            color: #666;
+        }
+        .breadcrumb {
+            font-size: 0.88rem;
+            color: #888;
+            margin-bottom: 1.2rem;
+        }
+        .breadcrumb a {
+            color: #0056b3;
+            text-decoration: none;
+        }
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+        .blog-content .back-to-blog a {
+            font-weight: 500;
+            text-decoration: none;
+        }
+        .blog-content .back-to-blog a:hover {
+            text-decoration: underline;
+        }
         @media (max-width: 768px) {
             .blog-content {
                 padding: 15px;
             }
-            
             .blog-content h1 {
-                font-size: 2rem;
+                font-size: 1.9rem;
             }
-            
             .blog-content h2 {
-                font-size: 1.5rem;
+                font-size: 1.45rem;
             }
-            
             .blog-content h3 {
-                font-size: 1.2rem;
+                font-size: 1.15rem;
+            }
+            .use-cases {
+                grid-template-columns: 1fr;
             }
         }
     </style>
@@ -177,8 +259,7 @@
         <header>
             <div class="logo">
                 <a href="/" class="logo-link">
-                    <img src="/public/static/logo.png" alt="ROCKIMG" class="logo-image" width="40" height="40" decoding="async">
-                    <span class="logo-text">ROCKIMG</span>
+                    <img src="/public/static/logo.svg" alt="ROCKIMG" class="logo-image" width="150" height="25" decoding="async">
                 </a>
             </div>
             <nav class="menu">
@@ -195,6 +276,7 @@
                                 <a href="/note-cards.html" class="dropdown-item">Note Card</a>
                                 <a href="/speech-bubble-meme.html" class="dropdown-item">Speech Bubble Meme</a>
                                 <a href="/svg-gradient-generator.html" class="dropdown-item">SVG Gradient Generator</a>
+                                <a href="/emoji-combo.html" class="dropdown-item">Emoji Combo</a>
                             </div>
                 </div>
                 <div class="menu-group">
@@ -247,7 +329,10 @@
                         <a href="/gif-extractor.html" class="dropdown-item">GIF Frame Extractor</a>
                         <a href="/gif-to-apng.html" class="dropdown-item">GIF to APNG</a>
                         <a href="/gif-to-mp4.html" class="dropdown-item">GIF to MP4</a>
+                        <a href="/gif-to-livp.html" class="dropdown-item">GIF to Live Photo</a>
                         <a href="/gif-to-webp.html" class="dropdown-item">GIF to WebP</a>
+                        <a href="/livp-to-photo.html" class="dropdown-item">Live Photo to Photo</a>
+                        <a href="/livp-to-gif.html" class="dropdown-item">Live Photo to GIF</a>
                         <a href="/heic-converter.html" class="dropdown-item">HEIC Converter</a>
                         <a href="/heif-to-jpg.html" class="dropdown-item">HEIF to JPG</a>
                         <a href="/heif-to-png.html" class="dropdown-item">HEIF to PNG</a>
@@ -280,11 +365,16 @@
                         <a href="/ascii-to-picture.html" class="dropdown-item">ASCII to Picture</a>
                         <a href="/beauty-filter.html" class="dropdown-item">Beauty Filter</a>
                         <a href="/black-and-white.html" class="dropdown-item">Black and White</a>
+                        <a href="/ccd-style.html" class="dropdown-item">CCD Style</a>
+                        <a href="/rubbing-effect.html" class="dropdown-item">Rubbing Effect</a>
                         <a href="/color-blind-test.html" class="dropdown-item">Color Blind Test</a>
+                        <a href="/color-blindness-simulator.html" class="dropdown-item">Color Blindness Simulator</a>
                         <a href="/eye-test-chart.html" class="dropdown-item">Eye Test Chart</a>
                         <a href="/image-color.html" class="dropdown-item">Get Image Color</a>
+                        <a href="/image-coords.html" class="dropdown-item">Image Coordinate Picker</a>
                         <a href="/glitch-effect.html" class="dropdown-item">Glitch Effect</a>
                         <a href="/optical-illusion-generator.html" class="dropdown-item">Optical Illusion Generator</a>
+                        <a href="/motion-aftereffect-generator.html" class="dropdown-item">Motion Aftereffect Generator</a>
                         <a href="/image-filters.html" class="dropdown-item">Image Filters</a>
                         <a href="/image-to-pixel-art.html" class="dropdown-item">Image to Pixel Art</a>
                         <a href="/low-quality-image-maker.html" class="dropdown-item">Low Quality Image Maker</a>
@@ -331,6 +421,7 @@
                                 <a href="/note-cards.html" class="mobile-menu-item">Note Card</a>
                                 <a href="/speech-bubble-meme.html" class="mobile-menu-item">Speech Bubble Meme</a>
                                 <a href="/svg-gradient-generator.html" class="mobile-menu-item">SVG Gradient Generator</a>
+                                <a href="/emoji-combo.html" class="mobile-menu-item">Emoji Combo</a>
                         </div>
                     </div>
                     <div class="mobile-menu-section">
@@ -373,7 +464,10 @@
                         <a href="/gif-extractor.html" class="mobile-menu-item">GIF Frame Extractor</a>
                         <a href="/gif-to-apng.html" class="mobile-menu-item">GIF to APNG</a>
                         <a href="/gif-to-mp4.html" class="mobile-menu-item">GIF to MP4</a>
+                        <a href="/gif-to-livp.html" class="mobile-menu-item">GIF to Live Photo</a>
                         <a href="/gif-to-webp.html" class="mobile-menu-item">GIF to WebP</a>
+                        <a href="/livp-to-photo.html" class="mobile-menu-item">Live Photo to Photo</a>
+                        <a href="/livp-to-gif.html" class="mobile-menu-item">Live Photo to GIF</a>
                         <a href="/heic-converter.html" class="mobile-menu-item">HEIC Converter</a>
                         <a href="/heif-to-jpg.html" class="mobile-menu-item">HEIF to JPG</a>
                         <a href="/heif-to-png.html" class="mobile-menu-item">HEIF to PNG</a>
@@ -401,11 +495,16 @@
                         <a href="/ascii-to-picture.html" class="mobile-menu-item">ASCII to Picture</a>
                         <a href="/beauty-filter.html" class="mobile-menu-item">Beauty Filter</a>
                         <a href="/black-and-white.html" class="mobile-menu-item">Black and White</a>
+                        <a href="/ccd-style.html" class="mobile-menu-item">CCD Style</a>
+                        <a href="/rubbing-effect.html" class="mobile-menu-item">Rubbing Effect</a>
                         <a href="/color-blind-test.html" class="mobile-menu-item">Color Blind Test</a>
+                        <a href="/color-blindness-simulator.html" class="mobile-menu-item">Color Blindness Simulator</a>
                         <a href="/eye-test-chart.html" class="mobile-menu-item">Eye Test Chart</a>
                         <a href="/image-color.html" class="mobile-menu-item">Get Image Color</a>
+                        <a href="/image-coords.html" class="mobile-menu-item">Image Coordinate Picker</a>
                         <a href="/glitch-effect.html" class="mobile-menu-item">Glitch Effect</a>
                         <a href="/optical-illusion-generator.html" class="mobile-menu-item">Optical Illusion Generator</a>
+                        <a href="/motion-aftereffect-generator.html" class="mobile-menu-item">Motion Aftereffect Generator</a>
                         <a href="/image-filters.html" class="mobile-menu-item">Image Filters</a>
                         <a href="/image-to-pixel-art.html" class="mobile-menu-item">Image to Pixel Art</a>
                         <a href="/low-quality-image-maker.html" class="mobile-menu-item">Low Quality Image Maker</a>
@@ -437,98 +536,97 @@
 
 
 
-
         <main>
-            <article class="blog-content">
-                <h1>How to Add Noise to an Image: Noise Texture &amp; Gaussian Noise</h1>
-                <p>Learning <strong>how to add noise to an image</strong> is useful when you want film-style grain, subtle <strong>noise texture</strong>, or a less “clinical” digital look. This guide explains <strong>Gaussian noise</strong>, how it differs from other patterns, and how to <strong>add noise to an image</strong> with ROCKIMG’s free <a href="/add-noise.html">Add Noise</a> tool in your browser.</p>
-                <p class="publish-date">Published on: April 20, 2026</p>
+            <article class="blog-content" itemscope itemtype="https://schema.org/BlogPosting">
+                <nav class="breadcrumb" aria-label="Breadcrumb">
+                    <a href="/">ROCKIMG</a> &rsaquo;
+                    <a href="/blog.html">Blog</a> &rsaquo;
+                    <span>How to Add Noise to an Image: Noise Texture &amp; Gaussian Noise</span>
+                </nav>
+<h1>How to Add Noise to an Image: Noise Texture &amp; Gaussian Noise</h1>
+<p>Learning <strong>how to add noise to an image</strong> is useful when you want film-style grain, subtle <strong>noise texture</strong>, or a less “clinical” digital look. This guide explains <strong>Gaussian noise</strong>, how it differs from other patterns, and how to <strong>add noise to an image</strong> with ROCKIMG’s free <a href="/add-noise.html">Add Noise</a> tool in your browser.</p>
+<p class="publish-date">Published on: April 20, 2026</p>
 
-                <figure>
-                    <img src="/public/static/samples/noise-image.png" alt="Example of noise texture and film-style grain on an image" loading="lazy">
-                    <figcaption>Adding noise creates a visible <strong>noise texture</strong>—adjust intensity and grain size for subtle film grain or a stronger effect.</figcaption>
-                </figure>
+<figure>
+    <img src="/public/static/samples/noise-image.png" alt="Example of noise texture and film-style grain on an image" loading="lazy">
+    <figcaption>Adding noise creates a visible <strong>noise texture</strong>—adjust intensity and grain size for subtle film grain or a stronger effect.</figcaption>
+</figure>
 
-                <div class="cta">
-                    <p>Open Add Noise and try Gaussian noise on your photo.</p>
-                    <a href="/add-noise.html" target="_blank" rel="noopener">Try Add Noise</a>
-                </div>
+<div class="cta">
+    <p>Open Add Noise and try Gaussian noise on your photo.</p>
+    <a href="/add-noise.html" target="_blank" rel="noopener">Try Add Noise</a>
+</div>
 
-                <h2>Why add noise to an image?</h2>
-                <p>Pristine digital photos can feel flat or overly smooth. When you <strong>add noise to an image</strong>, you reintroduce fine variation that mimics film grain, paper texture, or sensor character. Designers and photographers also use <strong>noise texture</strong> to unify composites, age a mockup, or hide banding in gradients. The goal is usually believable grain—not random static—so strength and grain size matter.</p>
+<h2>Why add noise to an image?</h2>
+<p>Pristine digital photos can feel flat or overly smooth. When you <strong>add noise to an image</strong>, you reintroduce fine variation that mimics film grain, paper texture, or sensor character. Designers and photographers also use <strong>noise texture</strong> to unify composites, age a mockup, or hide banding in gradients. The goal is usually believable grain—not random static—so strength and grain size matter.</p>
 
-                <h2>What is noise texture?</h2>
-                <p><strong>Noise texture</strong> is the visible pattern created by random (or pseudo-random) pixel variation across an image. At low strength it reads as soft grain; at high strength it can dominate the picture. Good <strong>noise texture</strong> preserves the underlying photo: you still recognize edges and color, but surfaces feel less “plastic.” Pairing noise with appropriate resolution (and grain size) keeps the effect intentional rather than accidental.</p>
+<h2>What is noise texture?</h2>
+<p><strong>Noise texture</strong> is the visible pattern created by random (or pseudo-random) pixel variation across an image. At low strength it reads as soft grain; at high strength it can dominate the picture. Good <strong>noise texture</strong> preserves the underlying photo: you still recognize edges and color, but surfaces feel less “plastic.” Pairing noise with appropriate resolution (and grain size) keeps the effect intentional rather than accidental.</p>
 
-                <h2>Gaussian noise in plain terms</h2>
-                <p><strong>Gaussian noise</strong> adds pixel-level variation that follows a bell-shaped (normal) distribution. Visually, it often looks like fine, even grain—similar to what many people expect from “camera noise” or light film grain. That is why <strong>Gaussian noise</strong> is a common first choice when you <strong>add noise to an image</strong> for a natural look.</p>
-                <p>ROCKIMG’s <a href="/add-noise.html">Add Noise</a> tool also supports other noise types—such as Salt &amp; Pepper, Uniform, and Poisson—which produce different <strong>noise texture</strong> characters (speckles, even distribution, or shot-noise-like patterns). Experiment when you want a more stylized or gritty effect.</p>
+<h2>Gaussian noise in plain terms</h2>
+<p><strong>Gaussian noise</strong> adds pixel-level variation that follows a bell-shaped (normal) distribution. Visually, it often looks like fine, even grain—similar to what many people expect from “camera noise” or light film grain. That is why <strong>Gaussian noise</strong> is a common first choice when you <strong>add noise to an image</strong> for a natural look.</p>
+<p>ROCKIMG’s <a href="/add-noise.html">Add Noise</a> tool also supports other noise types—such as Salt &amp; Pepper, Uniform, and Poisson—which produce different <strong>noise texture</strong> characters (speckles, even distribution, or shot-noise-like patterns). Experiment when you want a more stylized or gritty effect.</p>
 
-                <h2>How to add noise to an image (step by step)</h2>
-                <p>Here is <strong>how to add noise to an image</strong> with the online workflow on <a href="/add-noise.html">add-noise.html</a>:</p>
+<h2>How to add noise to an image (step by step)</h2>
+<p>Here is <strong>how to add noise to an image</strong> with the online workflow on <a href="/add-noise.html">add-noise.html</a>:</p>
 
-                <h3>Step 1: Upload your image</h3>
-                <p>Drag and drop a file or click to upload. You can also start from a sample image if you want to preview the effect quickly.</p>
+<h3>Step 1: Upload your image</h3>
+<p>Drag and drop a file or click to upload. You can also start from a sample image if you want to preview the effect quickly.</p>
 
-                <h3>Step 2: Choose a noise type</h3>
-                <p>Select <strong>Gaussian noise</strong> for classic fine grain, or try other modes for a different <strong>noise texture</strong>.</p>
+<h3>Step 2: Choose a noise type</h3>
+<p>Select <strong>Gaussian noise</strong> for classic fine grain, or try other modes for a different <strong>noise texture</strong>.</p>
 
-                <h3>Step 3: Adjust intensity and grain</h3>
-                <p>Use <strong>noise intensity</strong> to control how strong the effect is. Tune <strong>grain size</strong> so the grain matches your image scale—large grain reads more retro or coarse; small grain feels closer to subtle film grain. Optional color controls can tint the noise for a warmer or cooler look.</p>
+<h3>Step 3: Adjust intensity and grain</h3>
+<p>Use <strong>noise intensity</strong> to control how strong the effect is. Tune <strong>grain size</strong> so the grain matches your image scale—large grain reads more retro or coarse; small grain feels closer to subtle film grain. Optional color controls can tint the noise for a warmer or cooler look.</p>
 
-                <h3>Step 4: Apply and download</h3>
-                <p>Click <strong>Apply Noise</strong>, review the preview, then download when the look matches your goal.</p>
+<h3>Step 4: Apply and download</h3>
+<p>Click <strong>Apply Noise</strong>, review the preview, then download when the look matches your goal.</p>
 
-                <div class="tip">
-                    <p><strong>Tip:</strong> Start with low intensity and increase gradually. It is easier to <strong>add noise to an image</strong> in small steps than to remove heavy grain afterward.</p>
-                </div>
+<div class="tip">
+    <p><strong>Tip:</strong> Start with low intensity and increase gradually. It is easier to <strong>add noise to an image</strong> in small steps than to remove heavy grain afterward.</p>
+</div>
 
-                <h2>Best practices</h2>
-                <ul>
-                    <li>Match <strong>noise texture</strong> to output size—what looks good full-screen may look harsh as a small thumbnail.</li>
-                    <li>For portraits, favor lighter settings so skin does not look overly gritty unless that is the creative intent.</li>
-                    <li>When simulating film, combine mild <strong>Gaussian noise</strong> with sensible grain size rather than maximum intensity.</li>
-                    <li>Keep a non-destructive mindset: keep the original file before you <strong>add noise to an image</strong> for production use.</li>
-                </ul>
+<h2>Best practices</h2>
+<ul>
+    <li>Match <strong>noise texture</strong> to output size—what looks good full-screen may look harsh as a small thumbnail.</li>
+    <li>For portraits, favor lighter settings so skin does not look overly gritty unless that is the creative intent.</li>
+    <li>When simulating film, combine mild <strong>Gaussian noise</strong> with sensible grain size rather than maximum intensity.</li>
+    <li>Keep a non-destructive mindset: keep the original file before you <strong>add noise to an image</strong> for production use.</li>
+</ul>
 
-                <h2>Conclusion</h2>
-                <p>Whether you need <strong>Gaussian noise</strong> for fine grain or another mode for a bolder <strong>noise texture</strong>, knowing <strong>how to add noise to an image</strong> helps you control mood and style. Use ROCKIMG <a href="/add-noise.html">Add Noise</a> to <strong>add noise to an image</strong> online, adjust type and strength, and download the result—without installing desktop software.</p>
+<h2>Conclusion</h2>
+<p>Whether you need <strong>Gaussian noise</strong> for fine grain or another mode for a bolder <strong>noise texture</strong>, knowing <strong>how to add noise to an image</strong> helps you control mood and style. Use ROCKIMG <a href="/add-noise.html">Add Noise</a> to <strong>add noise to an image</strong> online, adjust type and strength, and download the result—without installing desktop software.</p>
 
-                <div class="cta">
-                    <p>Add grain and noise texture in your browser—free.</p>
-                    <a href="/add-noise.html" target="_blank" rel="noopener">Open Add Noise</a>
-                </div>
-                <p class="back-to-blog" style="margin-top:2.5rem;"><a href="/blog.html">← Back to all tutorials</a></p>
+<div class="cta">
+    <p>Add grain and noise texture in your browser—free.</p>
+    <a href="/add-noise.html" target="_blank" rel="noopener">Open Add Noise</a>
+</div>
+<p class="back-to-blog" style="margin-top:2.5rem;"><a href="/blog.html">← Back to all tutorials</a></p>
             </article>
         </main>
         <footer class="footer">
-            <nav class="footer-nav" >
-                 <a href="/blog.html">Blog</a>
-                 <a href="/tools.html">Tools</a>
-                 <a href="/about.html">About Us</a>
-                 <a href="/privacy.html">Privacy Policy</a>
-                 <a href="/terms.html">Terms of Service</a>
-              </nav><p>&copy; 2026 ROCKIMG. All rights reserved.</p>
-         </footer>
+            <nav class="footer-nav">
+                <a href="/blog.html">Blog</a>
+                <a href="/tools.html">Tools</a>
+                <a href="/about.html">About Us</a>
+                <a href="/privacy.html">Privacy Policy</a>
+                <a href="/terms.html">Terms of Service</a>
+            </nav>
+            <p>&copy; 2026 ROCKIMG. All rights reserved.</p>
+        </footer>
         <script>
             document.addEventListener('DOMContentLoaded', function() {
                 const menuBtn = document.querySelector('.mobile-menu-btn');
                 const mobileMenu = document.querySelector('.mobile-menu');
-                
-                if (!menuBtn || !mobileMenu) {
-                    return;
-                }
-
+                if (!menuBtn || !mobileMenu) return;
                 function syncMobileMenuScrollLock() {
                     document.documentElement.classList.toggle('mobile-menu-open', mobileMenu.classList.contains('active'));
                 }
-
                 menuBtn.addEventListener('click', function() {
                     this.classList.toggle('active');
                     mobileMenu.classList.toggle('active');
                     syncMobileMenuScrollLock();
                 });
-
                 document.addEventListener('click', function(e) {
                     if (!mobileMenu.contains(e.target) && !menuBtn.contains(e.target)) {
                         mobileMenu.classList.remove('active');

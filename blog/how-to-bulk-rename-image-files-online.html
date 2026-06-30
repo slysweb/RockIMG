@@ -1,18 +1,18 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>How to Bulk Rename Images Online – Free Image Renamer Tool | ROCKIMG Blog</title>
-    <meta name="description" content="Learn how to bulk rename image files online in seconds. Add prefixes, suffixes, change case, replace spaces, and use find & replace — free, private, no upload needed.">
+    <meta name="description" content="Learn how to bulk rename image files online in seconds. Add prefixes, suffixes, change case, replace spaces, and use find &amp; replace — free, private, no upload needed.">
     <meta name="keywords" content="bulk rename images, image renamer, batch rename photos, rename image files online, image filename editor, bulk rename photos online, batch file rename tool">
+    <meta property="article:published_time" content="2026-04-13">
     <link rel="canonical" href="https://www.rockimg.com/blog/how-to-bulk-rename-image-files-online.html">
     <meta property="og:title" content="How to Bulk Rename Images Online – Free Image Renamer Tool | ROCKIMG Blog">
-    <meta property="og:description" content="Bulk rename image files in your browser — add prefix/suffix, change case, replace spaces, find & replace. Free, private, no upload needed.">
+    <meta property="og:description" content="Bulk rename image files in your browser — add prefix/suffix, change case, replace spaces, find &amp; replace. Free, private, no upload needed.">
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://www.rockimg.com/blog/how-to-bulk-rename-image-files-online.html">
     <meta property="og:site_name" content="ROCKIMG">
-    <meta property="article:published_time" content="2026-04-13">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="How to Bulk Rename Images Online – Free Image Renamer Tool">
     <meta name="twitter:description" content="Rename dozens of image files at once in your browser — no software, no upload, completely free.">
@@ -48,6 +48,12 @@
             margin-bottom: 0.6rem;
             color: #333;
         }
+        .blog-content h4 {
+            font-size: 1.12rem;
+            margin-top: 1.2rem;
+            margin-bottom: 0.55rem;
+            color: #334e68;
+        }
         .blog-content p {
             margin-bottom: 1rem;
             font-size: 1.05rem;
@@ -68,7 +74,7 @@
             height: auto;
             margin: 1.5rem auto;
             border-radius: 8px;
-            box-shadow: 0 3px 10px rgba(0,0,0,0.12);
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
             display: block;
         }
         .blog-content figure {
@@ -79,6 +85,22 @@
             color: #777;
             text-align: center;
             margin-top: -0.5rem;
+        }
+        .blog-content code {
+            padding: 0.12rem 0.4rem;
+            background: #f1f5f9;
+            border-radius: 4px;
+            font-size: 0.92em;
+            color: #c0392b;
+        }
+        .blog-content kbd {
+            display: inline-block;
+            padding: 0.1rem 0.45rem;
+            border: 1px solid #cbd5e1;
+            border-radius: 4px;
+            background: #f8fafc;
+            font-size: 0.85em;
+            box-shadow: 0 1px 0 #cbd5e1;
         }
         .publish-date {
             color: #888;
@@ -92,7 +114,10 @@
             margin: 1.5rem 0;
             border-radius: 0 8px 8px 0;
         }
-        .blog-content .tip p { margin: 0; font-size: 1rem; }
+        .blog-content .tip p {
+            margin: 0;
+            font-size: 1rem;
+        }
         .blog-content .warning {
             background-color: #fff8e1;
             border-left: 4px solid #ffc107;
@@ -100,7 +125,18 @@
             margin: 1.5rem 0;
             border-radius: 0 8px 8px 0;
         }
-        .blog-content .warning p { margin: 0; font-size: 1rem; }
+        .blog-content .warning p {
+            margin: 0;
+            font-size: 1rem;
+        }
+        .blog-content .example-box {
+            background: #f7fbff;
+            border: 1px solid #d8ebff;
+            border-left: 4px solid #4a90e2;
+            border-radius: 8px;
+            padding: 14px 16px;
+            margin: 14px 0;
+        }
         .blog-content .cta {
             text-align: center;
             margin: 2rem 0;
@@ -128,72 +164,28 @@
         .blog-content .cta a:hover {
             background-color: #003d82;
         }
-        .step-list {
-            counter-reset: step-counter;
-            list-style: none;
-            padding-left: 0;
-        }
-        .step-list li {
-            counter-increment: step-counter;
-            padding: 12px 14px 12px 52px;
-            margin-bottom: 10px;
-            background: #f8f9fa;
-            border-radius: 8px;
-            position: relative;
-            font-size: 1.05rem;
-            color: #444;
-        }
-        .step-list li::before {
-            content: counter(step-counter);
-            position: absolute;
-            left: 14px;
-            top: 50%;
-            transform: translateY(-50%);
-            background: #0056b3;
-            color: white;
-            width: 26px;
-            height: 26px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 0.85rem;
-            font-weight: 700;
-        }
-        .rules-grid {
+        .use-cases {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
             gap: 14px;
             margin: 1.2rem 0 1.6rem;
         }
-        .rule-card {
+        .use-case-card {
             background: #f8f9fa;
             border-radius: 8px;
             padding: 16px;
             border-top: 3px solid #0056b3;
         }
-        .rule-card strong {
+        .use-case-card strong {
             display: block;
             margin-bottom: 6px;
             color: #222;
-            font-size: 0.97rem;
         }
-        .rule-card p {
-            font-size: 0.9rem;
+        .use-case-card p {
+            font-size: 0.92rem;
             margin: 0;
             color: #666;
         }
-        .rename-example {
-            background: #f1f3f5;
-            border-radius: 8px;
-            padding: 14px 18px;
-            margin: 1rem 0;
-            font-family: monospace;
-            font-size: 0.97rem;
-        }
-        .rename-example .before { color: #c0392b; }
-        .rename-example .arrow  { color: #888; padding: 0 8px; }
-        .rename-example .after  { color: #27ae60; font-weight: 600; }
         .breadcrumb {
             font-size: 0.88rem;
             color: #888;
@@ -203,13 +195,32 @@
             color: #0056b3;
             text-decoration: none;
         }
-        .breadcrumb a:hover { text-decoration: underline; }
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+        .blog-content .back-to-blog a {
+            font-weight: 500;
+            text-decoration: none;
+        }
+        .blog-content .back-to-blog a:hover {
+            text-decoration: underline;
+        }
         @media (max-width: 768px) {
-            .blog-content { padding: 15px; }
-            .blog-content h1 { font-size: 1.9rem; }
-            .blog-content h2 { font-size: 1.45rem; }
-            .blog-content h3 { font-size: 1.15rem; }
-            .rules-grid { grid-template-columns: 1fr; }
+            .blog-content {
+                padding: 15px;
+            }
+            .blog-content h1 {
+                font-size: 1.9rem;
+            }
+            .blog-content h2 {
+                font-size: 1.45rem;
+            }
+            .blog-content h3 {
+                font-size: 1.15rem;
+            }
+            .use-cases {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
     <script type="application/ld+json">
@@ -248,8 +259,7 @@
         <header>
             <div class="logo">
                 <a href="/" class="logo-link">
-                    <img src="/public/static/logo.png" alt="ROCKIMG" class="logo-image" width="40" height="40" decoding="async">
-                    <span class="logo-text">ROCKIMG</span>
+                    <img src="/public/static/logo.svg" alt="ROCKIMG" class="logo-image" width="150" height="25" decoding="async">
                 </a>
             </div>
             <nav class="menu">
@@ -266,6 +276,7 @@
                                 <a href="/note-cards.html" class="dropdown-item">Note Card</a>
                                 <a href="/speech-bubble-meme.html" class="dropdown-item">Speech Bubble Meme</a>
                                 <a href="/svg-gradient-generator.html" class="dropdown-item">SVG Gradient Generator</a>
+                                <a href="/emoji-combo.html" class="dropdown-item">Emoji Combo</a>
                             </div>
                 </div>
                 <div class="menu-group">
@@ -318,7 +329,10 @@
                         <a href="/gif-extractor.html" class="dropdown-item">GIF Frame Extractor</a>
                         <a href="/gif-to-apng.html" class="dropdown-item">GIF to APNG</a>
                         <a href="/gif-to-mp4.html" class="dropdown-item">GIF to MP4</a>
+                        <a href="/gif-to-livp.html" class="dropdown-item">GIF to Live Photo</a>
                         <a href="/gif-to-webp.html" class="dropdown-item">GIF to WebP</a>
+                        <a href="/livp-to-photo.html" class="dropdown-item">Live Photo to Photo</a>
+                        <a href="/livp-to-gif.html" class="dropdown-item">Live Photo to GIF</a>
                         <a href="/heic-converter.html" class="dropdown-item">HEIC Converter</a>
                         <a href="/heif-to-jpg.html" class="dropdown-item">HEIF to JPG</a>
                         <a href="/heif-to-png.html" class="dropdown-item">HEIF to PNG</a>
@@ -351,11 +365,16 @@
                         <a href="/ascii-to-picture.html" class="dropdown-item">ASCII to Picture</a>
                         <a href="/beauty-filter.html" class="dropdown-item">Beauty Filter</a>
                         <a href="/black-and-white.html" class="dropdown-item">Black and White</a>
+                        <a href="/ccd-style.html" class="dropdown-item">CCD Style</a>
+                        <a href="/rubbing-effect.html" class="dropdown-item">Rubbing Effect</a>
                         <a href="/color-blind-test.html" class="dropdown-item">Color Blind Test</a>
+                        <a href="/color-blindness-simulator.html" class="dropdown-item">Color Blindness Simulator</a>
                         <a href="/eye-test-chart.html" class="dropdown-item">Eye Test Chart</a>
                         <a href="/image-color.html" class="dropdown-item">Get Image Color</a>
+                        <a href="/image-coords.html" class="dropdown-item">Image Coordinate Picker</a>
                         <a href="/glitch-effect.html" class="dropdown-item">Glitch Effect</a>
                         <a href="/optical-illusion-generator.html" class="dropdown-item">Optical Illusion Generator</a>
+                        <a href="/motion-aftereffect-generator.html" class="dropdown-item">Motion Aftereffect Generator</a>
                         <a href="/image-filters.html" class="dropdown-item">Image Filters</a>
                         <a href="/image-to-pixel-art.html" class="dropdown-item">Image to Pixel Art</a>
                         <a href="/low-quality-image-maker.html" class="dropdown-item">Low Quality Image Maker</a>
@@ -402,6 +421,7 @@
                                 <a href="/note-cards.html" class="mobile-menu-item">Note Card</a>
                                 <a href="/speech-bubble-meme.html" class="mobile-menu-item">Speech Bubble Meme</a>
                                 <a href="/svg-gradient-generator.html" class="mobile-menu-item">SVG Gradient Generator</a>
+                                <a href="/emoji-combo.html" class="mobile-menu-item">Emoji Combo</a>
                         </div>
                     </div>
                     <div class="mobile-menu-section">
@@ -444,7 +464,10 @@
                         <a href="/gif-extractor.html" class="mobile-menu-item">GIF Frame Extractor</a>
                         <a href="/gif-to-apng.html" class="mobile-menu-item">GIF to APNG</a>
                         <a href="/gif-to-mp4.html" class="mobile-menu-item">GIF to MP4</a>
+                        <a href="/gif-to-livp.html" class="mobile-menu-item">GIF to Live Photo</a>
                         <a href="/gif-to-webp.html" class="mobile-menu-item">GIF to WebP</a>
+                        <a href="/livp-to-photo.html" class="mobile-menu-item">Live Photo to Photo</a>
+                        <a href="/livp-to-gif.html" class="mobile-menu-item">Live Photo to GIF</a>
                         <a href="/heic-converter.html" class="mobile-menu-item">HEIC Converter</a>
                         <a href="/heif-to-jpg.html" class="mobile-menu-item">HEIF to JPG</a>
                         <a href="/heif-to-png.html" class="mobile-menu-item">HEIF to PNG</a>
@@ -472,11 +495,16 @@
                         <a href="/ascii-to-picture.html" class="mobile-menu-item">ASCII to Picture</a>
                         <a href="/beauty-filter.html" class="mobile-menu-item">Beauty Filter</a>
                         <a href="/black-and-white.html" class="mobile-menu-item">Black and White</a>
+                        <a href="/ccd-style.html" class="mobile-menu-item">CCD Style</a>
+                        <a href="/rubbing-effect.html" class="mobile-menu-item">Rubbing Effect</a>
                         <a href="/color-blind-test.html" class="mobile-menu-item">Color Blind Test</a>
+                        <a href="/color-blindness-simulator.html" class="mobile-menu-item">Color Blindness Simulator</a>
                         <a href="/eye-test-chart.html" class="mobile-menu-item">Eye Test Chart</a>
                         <a href="/image-color.html" class="mobile-menu-item">Get Image Color</a>
+                        <a href="/image-coords.html" class="mobile-menu-item">Image Coordinate Picker</a>
                         <a href="/glitch-effect.html" class="mobile-menu-item">Glitch Effect</a>
                         <a href="/optical-illusion-generator.html" class="mobile-menu-item">Optical Illusion Generator</a>
+                        <a href="/motion-aftereffect-generator.html" class="mobile-menu-item">Motion Aftereffect Generator</a>
                         <a href="/image-filters.html" class="mobile-menu-item">Image Filters</a>
                         <a href="/image-to-pixel-art.html" class="mobile-menu-item">Image to Pixel Art</a>
                         <a href="/low-quality-image-maker.html" class="mobile-menu-item">Low Quality Image Maker</a>
@@ -508,7 +536,6 @@
 
 
 
-
         <main>
             <article class="blog-content" itemscope itemtype="https://schema.org/BlogPosting">
                 <nav class="breadcrumb" aria-label="Breadcrumb">
@@ -516,223 +543,222 @@
                     <a href="/blog.html">Blog</a> &rsaquo;
                     <span>How to Bulk Rename Images Online</span>
                 </nav>
+<h1 itemprop="headline">How to Bulk Rename Images Online – Free Image Renamer Tool</h1>
+<p class="publish-date">Published on: <time datetime="2026-04-13" itemprop="datePublished">April 13, 2026</time></p>
 
-                <h1 itemprop="headline">How to Bulk Rename Images Online – Free Image Renamer Tool</h1>
-                <p class="publish-date">Published on: <time datetime="2026-04-13" itemprop="datePublished">April 13, 2026</time></p>
+<p>You just finished a photo shoot, downloaded a batch of product images from a client, or exported a set of screenshots from a design tool. The filenames are a mess: <code>IMG_4872.jpg</code>, <code>Screenshot 2026-03-14 at 09.42.11.png</code>, <code>PHOTO final FINAL v3.JPG</code>. Sound familiar?</p>
+<p>Manually renaming dozens of image files one by one is tedious and error-prone. That is where a <strong>bulk image renamer</strong> comes in. ROCKIMG's free <a href="/image-file-renamer.html"><strong>Image File Renamer</strong></a> lets you rename up to 50 image files at once, directly in your browser — no software to install, no files uploaded to any server.</p>
 
-                <p>You just finished a photo shoot, downloaded a batch of product images from a client, or exported a set of screenshots from a design tool. The filenames are a mess: <code>IMG_4872.jpg</code>, <code>Screenshot 2026-03-14 at 09.42.11.png</code>, <code>PHOTO final FINAL v3.JPG</code>. Sound familiar?</p>
-                <p>Manually renaming dozens of image files one by one is tedious and error-prone. That is where a <strong>bulk image renamer</strong> comes in. ROCKIMG's free <a href="/image-file-renamer.html"><strong>Image File Renamer</strong></a> lets you rename up to 50 image files at once, directly in your browser — no software to install, no files uploaded to any server.</p>
+<div class="cta">
+    <p>Skip the reading and start renaming now.</p>
+    <a href="/image-file-renamer.html" target="_blank">Open Image File Renamer</a>
+</div>
 
-                <div class="cta">
-                    <p>Skip the reading and start renaming now.</p>
-                    <a href="/image-file-renamer.html" target="_blank">Open Image File Renamer</a>
-                </div>
+<h2>Why Proper Image Filenames Matter</h2>
+<p>Before diving into how to bulk rename images, it is worth understanding <em>why</em> filenames matter in the first place. Many people treat filenames as an afterthought, but they have real consequences:</p>
+<ul>
+    <li><strong>SEO</strong> — search engines read image filenames. <code>product-red-sneakers.jpg</code> helps Google understand the image; <code>IMG_4872.jpg</code> tells it nothing.</li>
+    <li><strong>Accessibility</strong> — screen readers and alt-text generation tools often derive context from filenames when an explicit alt attribute is missing.</li>
+    <li><strong>Organization</strong> — a consistent naming convention (e.g. <code>project_client_date_v1.jpg</code>) makes large asset libraries searchable and sortable.</li>
+    <li><strong>Team collaboration</strong> — shared drives and CMS systems work better when everyone follows the same naming rules. Spaces and uppercase characters can break some systems entirely.</li>
+    <li><strong>Automated pipelines</strong> — if images feed into a script or a build process, consistent filenames prevent unexpected errors.</li>
+</ul>
+<p>A good bulk image renamer handles all of these concerns in one pass.</p>
 
-                <h2>Why Proper Image Filenames Matter</h2>
-                <p>Before diving into how to bulk rename images, it is worth understanding <em>why</em> filenames matter in the first place. Many people treat filenames as an afterthought, but they have real consequences:</p>
-                <ul>
-                    <li><strong>SEO</strong> — search engines read image filenames. <code>product-red-sneakers.jpg</code> helps Google understand the image; <code>IMG_4872.jpg</code> tells it nothing.</li>
-                    <li><strong>Accessibility</strong> — screen readers and alt-text generation tools often derive context from filenames when an explicit alt attribute is missing.</li>
-                    <li><strong>Organization</strong> — a consistent naming convention (e.g. <code>project_client_date_v1.jpg</code>) makes large asset libraries searchable and sortable.</li>
-                    <li><strong>Team collaboration</strong> — shared drives and CMS systems work better when everyone follows the same naming rules. Spaces and uppercase characters can break some systems entirely.</li>
-                    <li><strong>Automated pipelines</strong> — if images feed into a script or a build process, consistent filenames prevent unexpected errors.</li>
-                </ul>
-                <p>A good bulk image renamer handles all of these concerns in one pass.</p>
+<h2>What Can the Image File Renamer Do?</h2>
+<p>The tool offers six distinct rename operations that can be combined in any order:</p>
 
-                <h2>What Can the Image File Renamer Do?</h2>
-                <p>The tool offers six distinct rename operations that can be combined in any order:</p>
+<div class="rules-grid">
+    <div class="rule-card">
+        <strong>ALL UPPERCASE</strong>
+        <p>Converts every letter in the filename to uppercase. Useful for certain technical naming conventions.</p>
+    </div>
+    <div class="rule-card">
+        <strong>all lowercase</strong>
+        <p>Converts every letter to lowercase — the most common standard for web-ready filenames.</p>
+    </div>
+    <div class="rule-card">
+        <strong>Space → Underscore</strong>
+        <p>Replaces every space with an underscore (<code>_</code>). Ideal for filenames used in code or APIs.</p>
+    </div>
+    <div class="rule-card">
+        <strong>Space → Hyphen</strong>
+        <p>Replaces every space with a hyphen (<code>-</code>). Google's recommended separator for SEO-friendly URLs and filenames.</p>
+    </div>
+    <div class="rule-card">
+        <strong>Add Prefix / Suffix</strong>
+        <p>Prepend or append a fixed string to every filename — great for project codes, dates, or version tags.</p>
+    </div>
+    <div class="rule-card">
+        <strong>Find &amp; Replace</strong>
+        <p>Case-sensitive text substitution across all filenames at once. Replace any string with any other string.</p>
+    </div>
+</div>
 
-                <div class="rules-grid">
-                    <div class="rule-card">
-                        <strong>ALL UPPERCASE</strong>
-                        <p>Converts every letter in the filename to uppercase. Useful for certain technical naming conventions.</p>
-                    </div>
-                    <div class="rule-card">
-                        <strong>all lowercase</strong>
-                        <p>Converts every letter to lowercase — the most common standard for web-ready filenames.</p>
-                    </div>
-                    <div class="rule-card">
-                        <strong>Space → Underscore</strong>
-                        <p>Replaces every space with an underscore (<code>_</code>). Ideal for filenames used in code or APIs.</p>
-                    </div>
-                    <div class="rule-card">
-                        <strong>Space → Hyphen</strong>
-                        <p>Replaces every space with a hyphen (<code>-</code>). Google's recommended separator for SEO-friendly URLs and filenames.</p>
-                    </div>
-                    <div class="rule-card">
-                        <strong>Add Prefix / Suffix</strong>
-                        <p>Prepend or append a fixed string to every filename — great for project codes, dates, or version tags.</p>
-                    </div>
-                    <div class="rule-card">
-                        <strong>Find &amp; Replace</strong>
-                        <p>Case-sensitive text substitution across all filenames at once. Replace any string with any other string.</p>
-                    </div>
-                </div>
+<p>You can also <strong>click any individual filename</strong> to edit it manually, making one-off corrections without touching the batch rules.</p>
 
-                <p>You can also <strong>click any individual filename</strong> to edit it manually, making one-off corrections without touching the batch rules.</p>
+<h2>Step-by-Step: How to Bulk Rename Images</h2>
 
-                <h2>Step-by-Step: How to Bulk Rename Images</h2>
+<h3>Step 1 – Upload Your Images</h3>
+<p>Open the <a href="/image-file-renamer.html">Image File Renamer</a> and upload your files in one of two ways:</p>
+<ul>
+    <li><strong>Drag and drop</strong> files directly onto the upload zone.</li>
+    <li><strong>Click the upload zone</strong> to open a file picker and select multiple files at once (hold <kbd>Ctrl</kbd> / <kbd>Cmd</kbd> to select more than one).</li>
+</ul>
+<p>Supported formats: JPG, PNG, GIF, WebP, BMP. You can upload <strong>up to 50 files</strong> per session. Once uploaded, the left panel shows all original filenames and the right panel shows the renamed versions (initially identical to the originals).</p>
 
-                <h3>Step 1 – Upload Your Images</h3>
-                <p>Open the <a href="/image-file-renamer.html">Image File Renamer</a> and upload your files in one of two ways:</p>
-                <ul>
-                    <li><strong>Drag and drop</strong> files directly onto the upload zone.</li>
-                    <li><strong>Click the upload zone</strong> to open a file picker and select multiple files at once (hold <kbd>Ctrl</kbd> / <kbd>Cmd</kbd> to select more than one).</li>
-                </ul>
-                <p>Supported formats: JPG, PNG, GIF, WebP, BMP. You can upload <strong>up to 50 files</strong> per session. Once uploaded, the left panel shows all original filenames and the right panel shows the renamed versions (initially identical to the originals).</p>
+<div class="tip">
+    <p><strong>Tip:</strong> You can add more files to an existing session by uploading again — new files are appended to the list rather than replacing the current batch.</p>
+</div>
 
-                <div class="tip">
-                    <p><strong>Tip:</strong> You can add more files to an existing session by uploading again — new files are appended to the list rather than replacing the current batch.</p>
-                </div>
+<h3>Step 2 – Apply Batch Rename Rules</h3>
+<p>The rename rules panel sits between the two filename columns. Rules are applied in sequence, so you can stack them for powerful combinations. Here are the most useful combinations with real examples:</p>
 
-                <h3>Step 2 – Apply Batch Rename Rules</h3>
-                <p>The rename rules panel sits between the two filename columns. Rules are applied in sequence, so you can stack them for powerful combinations. Here are the most useful combinations with real examples:</p>
+<h4>Web-Ready Filenames (lowercase + hyphens)</h4>
+<p>The standard for SEO-friendly image filenames used by most websites:</p>
+<div class="rename-example">
+    <span class="before">My Product Photo Final.JPG</span>
+    <span class="arrow">→</span>
+    <span class="after">my-product-photo-final.jpg</span>
+</div>
+<p>Rules used: <em>all lowercase</em> + <em>Space → Hyphen</em></p>
 
-                <h4>Web-Ready Filenames (lowercase + hyphens)</h4>
-                <p>The standard for SEO-friendly image filenames used by most websites:</p>
-                <div class="rename-example">
-                    <span class="before">My Product Photo Final.JPG</span>
-                    <span class="arrow">→</span>
-                    <span class="after">my-product-photo-final.jpg</span>
-                </div>
-                <p>Rules used: <em>all lowercase</em> + <em>Space → Hyphen</em></p>
+<h4>Project-Prefixed Archive</h4>
+<p>Add a project code to the front of every filename for easy filtering in a shared drive:</p>
+<div class="rename-example">
+    <span class="before">hero-banner.png</span>
+    <span class="arrow">→</span>
+    <span class="after">projectX_hero-banner.png</span>
+</div>
+<p>Rules used: <em>Add Prefix</em> → <code>projectX_</code></p>
 
-                <h4>Project-Prefixed Archive</h4>
-                <p>Add a project code to the front of every filename for easy filtering in a shared drive:</p>
-                <div class="rename-example">
-                    <span class="before">hero-banner.png</span>
-                    <span class="arrow">→</span>
-                    <span class="after">projectX_hero-banner.png</span>
-                </div>
-                <p>Rules used: <em>Add Prefix</em> → <code>projectX_</code></p>
+<h4>Version Tagging</h4>
+<p>Append a version or date suffix so you can keep multiple iterations without confusion:</p>
+<div class="rename-example">
+    <span class="before">logo.png</span>
+    <span class="arrow">→</span>
+    <span class="after">logo_v2.png</span>
+</div>
+<p>Rules used: <em>Add Suffix</em> → <code>_v2</code></p>
 
-                <h4>Version Tagging</h4>
-                <p>Append a version or date suffix so you can keep multiple iterations without confusion:</p>
-                <div class="rename-example">
-                    <span class="before">logo.png</span>
-                    <span class="arrow">→</span>
-                    <span class="after">logo_v2.png</span>
-                </div>
-                <p>Rules used: <em>Add Suffix</em> → <code>_v2</code></p>
+<h4>Find &amp; Replace a Common String</h4>
+<p>Instantly rename a whole batch where one word changes — e.g. rebranding from "acme" to "rockco":</p>
+<div class="rename-example">
+    <span class="before">acme-logo.png &nbsp; acme-banner.jpg &nbsp; acme-icon.svg</span>
+    <span class="arrow">→</span>
+    <span class="after">rockco-logo.png &nbsp; rockco-banner.jpg &nbsp; rockco-icon.svg</span>
+</div>
+<p>Rules used: <em>Find</em> <code>acme</code> → <em>Replace With</em> <code>rockco</code></p>
 
-                <h4>Find &amp; Replace a Common String</h4>
-                <p>Instantly rename a whole batch where one word changes — e.g. rebranding from "acme" to "rockco":</p>
-                <div class="rename-example">
-                    <span class="before">acme-logo.png &nbsp; acme-banner.jpg &nbsp; acme-icon.svg</span>
-                    <span class="arrow">→</span>
-                    <span class="after">rockco-logo.png &nbsp; rockco-banner.jpg &nbsp; rockco-icon.svg</span>
-                </div>
-                <p>Rules used: <em>Find</em> <code>acme</code> → <em>Replace With</em> <code>rockco</code></p>
+<h4>Clean Up Camera Roll Filenames</h4>
+<p>Camera roll files often come with spaces and mixed case. One pass cleans them up for web use:</p>
+<div class="rename-example">
+    <span class="before">IMG 2026 03 14 Portrait.JPG</span>
+    <span class="arrow">→</span>
+    <span class="after">img-2026-03-14-portrait.jpg</span>
+</div>
+<p>Rules used: <em>all lowercase</em> + <em>Space → Hyphen</em></p>
 
-                <h4>Clean Up Camera Roll Filenames</h4>
-                <p>Camera roll files often come with spaces and mixed case. One pass cleans them up for web use:</p>
-                <div class="rename-example">
-                    <span class="before">IMG 2026 03 14 Portrait.JPG</span>
-                    <span class="arrow">→</span>
-                    <span class="after">img-2026-03-14-portrait.jpg</span>
-                </div>
-                <p>Rules used: <em>all lowercase</em> + <em>Space → Hyphen</em></p>
+<h3>Step 3 – Edit Individual Filenames (Optional)</h3>
+<p>Batch rules handle the heavy lifting, but sometimes one or two files need a unique name. Click any filename in the <em>New Filename</em> column on the right to open an inline editor. Type the new name and press <kbd>Enter</kbd> or click elsewhere to confirm. The file extension is always preserved automatically — you only edit the base name.</p>
 
-                <h3>Step 3 – Edit Individual Filenames (Optional)</h3>
-                <p>Batch rules handle the heavy lifting, but sometimes one or two files need a unique name. Click any filename in the <em>New Filename</em> column on the right to open an inline editor. Type the new name and press <kbd>Enter</kbd> or click elsewhere to confirm. The file extension is always preserved automatically — you only edit the base name.</p>
+<div class="tip">
+    <p><strong>Tip:</strong> Individual edits and batch rules work together. Apply your batch rules first, then use individual editing to make final adjustments on specific files.</p>
+</div>
 
-                <div class="tip">
-                    <p><strong>Tip:</strong> Individual edits and batch rules work together. Apply your batch rules first, then use individual editing to make final adjustments on specific files.</p>
-                </div>
+<h3>Step 4 – Preview Before You Download</h3>
+<p>The right column always shows a live preview of what the renamed filenames will look like. Check the list carefully before downloading — especially when using Find &amp; Replace, which is case-sensitive and replaces <em>all</em> occurrences in every filename.</p>
+<p>If anything looks wrong, click <strong>Reset All</strong> to revert all filenames to their originals and start fresh.</p>
 
-                <h3>Step 4 – Preview Before You Download</h3>
-                <p>The right column always shows a live preview of what the renamed filenames will look like. Check the list carefully before downloading — especially when using Find &amp; Replace, which is case-sensitive and replaces <em>all</em> occurrences in every filename.</p>
-                <p>If anything looks wrong, click <strong>Reset All</strong> to revert all filenames to their originals and start fresh.</p>
+<h3>Step 5 – Export Your Renamed Files</h3>
+<p>Once you are happy with the new names, you have two export options:</p>
 
-                <h3>Step 5 – Export Your Renamed Files</h3>
-                <p>Once you are happy with the new names, you have two export options:</p>
+<h4>Copy All Filenames to Clipboard</h4>
+<p>Click <strong>Copy All Filenames</strong> to copy the complete list of new filenames to your clipboard. This is useful when you only need the name list itself — for example, to update a spreadsheet, CMS, or database without re-downloading the actual files.</p>
 
-                <h4>Copy All Filenames to Clipboard</h4>
-                <p>Click <strong>Copy All Filenames</strong> to copy the complete list of new filenames to your clipboard. This is useful when you only need the name list itself — for example, to update a spreadsheet, CMS, or database without re-downloading the actual files.</p>
+<h4>Download Renamed Files as ZIP</h4>
+<p>Click <strong>Download Renamed Files</strong> to download all your images with their new names bundled in a ZIP archive (<code>renamed-images.zip</code>). When you unzip the archive, every file inside already has its correct new name — no extra steps needed.</p>
 
-                <h4>Download Renamed Files as ZIP</h4>
-                <p>Click <strong>Download Renamed Files</strong> to download all your images with their new names bundled in a ZIP archive (<code>renamed-images.zip</code>). When you unzip the archive, every file inside already has its correct new name — no extra steps needed.</p>
+<div class="tip">
+    <p><strong>Tip:</strong> If you only uploaded a single file, it downloads directly as that renamed file rather than being wrapped in a ZIP.</p>
+</div>
 
-                <div class="tip">
-                    <p><strong>Tip:</strong> If you only uploaded a single file, it downloads directly as that renamed file rather than being wrapped in a ZIP.</p>
-                </div>
+<h2>Real-World Use Cases for Bulk Image Renaming</h2>
 
-                <h2>Real-World Use Cases for Bulk Image Renaming</h2>
+<h3>E-Commerce Product Images</h3>
+<p>Online stores often receive hundreds of product photos from suppliers with generic names like <code>DSC_1042.jpg</code>. Before uploading to a Shopify, WooCommerce, or Magento store, bulk renaming them to descriptive, SEO-optimised filenames (e.g. <code>blue-denim-jacket-front.jpg</code>) improves discoverability and search rankings.</p>
 
-                <h3>E-Commerce Product Images</h3>
-                <p>Online stores often receive hundreds of product photos from suppliers with generic names like <code>DSC_1042.jpg</code>. Before uploading to a Shopify, WooCommerce, or Magento store, bulk renaming them to descriptive, SEO-optimised filenames (e.g. <code>blue-denim-jacket-front.jpg</code>) improves discoverability and search rankings.</p>
+<h3>Web Development Asset Management</h3>
+<p>Web developers frequently need all image assets to follow strict naming conventions — no spaces, lowercase only, hyphens as separators. A designer may deliver files named <code>Hero Image Final (USE THIS).png</code>; the Image File Renamer turns the whole batch into deployment-ready filenames in one click.</p>
 
-                <h3>Web Development Asset Management</h3>
-                <p>Web developers frequently need all image assets to follow strict naming conventions — no spaces, lowercase only, hyphens as separators. A designer may deliver files named <code>Hero Image Final (USE THIS).png</code>; the Image File Renamer turns the whole batch into deployment-ready filenames in one click.</p>
+<h3>Photography Workflows</h3>
+<p>Photographers exporting from Lightroom or Capture One often get sequential filenames like <code>DSC04711.jpg</code>. Adding a client name prefix and a shoot date suffix (<code>smithwedding_DSC04711_20260310.jpg</code>) instantly makes an archive searchable years later.</p>
 
-                <h3>Photography Workflows</h3>
-                <p>Photographers exporting from Lightroom or Capture One often get sequential filenames like <code>DSC04711.jpg</code>. Adding a client name prefix and a shoot date suffix (<code>smithwedding_DSC04711_20260310.jpg</code>) instantly makes an archive searchable years later.</p>
+<h3>Content Marketing &amp; Blog Images</h3>
+<p>Blog editors preparing featured images, infographics, and screenshots for a CMS benefit from consistent filenames that reflect the article topic. Renaming in bulk before upload saves time and keeps the media library clean.</p>
 
-                <h3>Content Marketing &amp; Blog Images</h3>
-                <p>Blog editors preparing featured images, infographics, and screenshots for a CMS benefit from consistent filenames that reflect the article topic. Renaming in bulk before upload saves time and keeps the media library clean.</p>
+<h3>Rebranding Projects</h3>
+<p>When a company rebrands, existing image assets often carry the old brand name in their filenames. Find &amp; Replace lets you swap the old name for the new one across hundreds of files at once.</p>
 
-                <h3>Rebranding Projects</h3>
-                <p>When a company rebrands, existing image assets often carry the old brand name in their filenames. Find &amp; Replace lets you swap the old name for the new one across hundreds of files at once.</p>
+<h2>Important Notes &amp; Limitations</h2>
+<ul>
+    <li><strong>File extensions are always preserved.</strong> Rename rules only affect the base filename, never the extension (<code>.jpg</code>, <code>.png</code>, etc.).</li>
+    <li><strong>Find &amp; Replace is case-sensitive.</strong> Searching for <code>Photo</code> will not match <code>photo</code>. Run the <em>all lowercase</em> rule first if you want case-insensitive matching.</li>
+    <li><strong>Up to 50 files per session.</strong> For larger batches, process in multiple sessions.</li>
+    <li><strong>All processing is local.</strong> Your images never leave your device. The tool reads filenames and file data entirely inside the browser.</li>
+    <li><strong>Data clears on refresh.</strong> Uploaded files and rename settings are held in browser memory only. Save your downloads before closing the tab.</li>
+    <li><strong>No undo history.</strong> Use <em>Reset All</em> to revert to original filenames, but this removes all manual edits as well.</li>
+</ul>
 
-                <h2>Important Notes &amp; Limitations</h2>
-                <ul>
-                    <li><strong>File extensions are always preserved.</strong> Rename rules only affect the base filename, never the extension (<code>.jpg</code>, <code>.png</code>, etc.).</li>
-                    <li><strong>Find &amp; Replace is case-sensitive.</strong> Searching for <code>Photo</code> will not match <code>photo</code>. Run the <em>all lowercase</em> rule first if you want case-insensitive matching.</li>
-                    <li><strong>Up to 50 files per session.</strong> For larger batches, process in multiple sessions.</li>
-                    <li><strong>All processing is local.</strong> Your images never leave your device. The tool reads filenames and file data entirely inside the browser.</li>
-                    <li><strong>Data clears on refresh.</strong> Uploaded files and rename settings are held in browser memory only. Save your downloads before closing the tab.</li>
-                    <li><strong>No undo history.</strong> Use <em>Reset All</em> to revert to original filenames, but this removes all manual edits as well.</li>
-                </ul>
+<div class="warning">
+    <p><strong>Note:</strong> The tool renames the files inside the downloaded ZIP archive. It does <em>not</em> rename files on your computer's file system. If you need to update the originals on disk, extract the ZIP and replace the old files manually.</p>
+</div>
 
-                <div class="warning">
-                    <p><strong>Note:</strong> The tool renames the files inside the downloaded ZIP archive. It does <em>not</em> rename files on your computer's file system. If you need to update the originals on disk, extract the ZIP and replace the old files manually.</p>
-                </div>
+<h2>Best Practices for Image Filename Conventions</h2>
+<p>Here are the widely accepted rules for naming image files, especially for web use:</p>
+<ol>
+    <li><strong>Use lowercase letters only.</strong> Servers are case-sensitive; mixing cases causes broken links.</li>
+    <li><strong>Use hyphens as word separators.</strong> Google treats hyphens as word separators in filenames, which helps SEO. Underscores are treated as word joiners.</li>
+    <li><strong>Be descriptive but concise.</strong> <code>red-running-shoes-side-view.jpg</code> is better than <code>shoes.jpg</code> or <code>high-quality-photo-of-our-brand-new-red-running-shoe-collection-2026.jpg</code>.</li>
+    <li><strong>Avoid spaces and special characters.</strong> Spaces get encoded as <code>%20</code> in URLs, and characters like <code>#</code>, <code>&amp;</code>, or <code>?</code> can break links entirely.</li>
+    <li><strong>Include relevant keywords.</strong> For product images: <code>[product-name]-[color]-[view].jpg</code>. For blog images: <code>[topic]-[description].jpg</code>.</li>
+    <li><strong>Use a consistent date or version format.</strong> <code>YYYY-MM-DD</code> or <code>_v1</code>, <code>_v2</code> keeps versions sortable.</li>
+</ol>
 
-                <h2>Best Practices for Image Filename Conventions</h2>
-                <p>Here are the widely accepted rules for naming image files, especially for web use:</p>
-                <ol>
-                    <li><strong>Use lowercase letters only.</strong> Servers are case-sensitive; mixing cases causes broken links.</li>
-                    <li><strong>Use hyphens as word separators.</strong> Google treats hyphens as word separators in filenames, which helps SEO. Underscores are treated as word joiners.</li>
-                    <li><strong>Be descriptive but concise.</strong> <code>red-running-shoes-side-view.jpg</code> is better than <code>shoes.jpg</code> or <code>high-quality-photo-of-our-brand-new-red-running-shoe-collection-2026.jpg</code>.</li>
-                    <li><strong>Avoid spaces and special characters.</strong> Spaces get encoded as <code>%20</code> in URLs, and characters like <code>#</code>, <code>&amp;</code>, or <code>?</code> can break links entirely.</li>
-                    <li><strong>Include relevant keywords.</strong> For product images: <code>[product-name]-[color]-[view].jpg</code>. For blog images: <code>[topic]-[description].jpg</code>.</li>
-                    <li><strong>Use a consistent date or version format.</strong> <code>YYYY-MM-DD</code> or <code>_v1</code>, <code>_v2</code> keeps versions sortable.</li>
-                </ol>
+<h2>Frequently Asked Questions</h2>
 
-                <h2>Frequently Asked Questions</h2>
+<h3>Can I bulk rename images without installing software?</h3>
+<p>Yes. The Image File Renamer runs entirely in your web browser. There is nothing to install, no account to create, and no files are sent to any server. Open the tool, upload your images, apply rules, and download.</p>
 
-                <h3>Can I bulk rename images without installing software?</h3>
-                <p>Yes. The Image File Renamer runs entirely in your web browser. There is nothing to install, no account to create, and no files are sent to any server. Open the tool, upload your images, apply rules, and download.</p>
+<h3>What image formats are supported?</h3>
+<p>The tool supports JPG/JPEG, PNG, GIF, WebP, and BMP files. You can mix different formats in the same batch — the tool treats each file independently and always preserves the original extension.</p>
 
-                <h3>What image formats are supported?</h3>
-                <p>The tool supports JPG/JPEG, PNG, GIF, WebP, and BMP files. You can mix different formats in the same batch — the tool treats each file independently and always preserves the original extension.</p>
+<h3>Does renaming affect image quality?</h3>
+<p>No. The tool only changes the filename. Image data, resolution, colour profile, and metadata are completely untouched. What goes in comes out, just with a different name.</p>
 
-                <h3>Does renaming affect image quality?</h3>
-                <p>No. The tool only changes the filename. Image data, resolution, colour profile, and metadata are completely untouched. What goes in comes out, just with a different name.</p>
+<h3>Can I combine multiple rename rules at once?</h3>
+<p>Yes, and this is one of the tool's most powerful features. For example, you can apply <em>all lowercase</em> + <em>Space → Hyphen</em> + <em>Add Prefix</em> all at the same time. Rules are applied in sequence from top to bottom in the rules panel.</p>
 
-                <h3>Can I combine multiple rename rules at once?</h3>
-                <p>Yes, and this is one of the tool's most powerful features. For example, you can apply <em>all lowercase</em> + <em>Space → Hyphen</em> + <em>Add Prefix</em> all at the same time. Rules are applied in sequence from top to bottom in the rules panel.</p>
+<h3>What happens if two files end up with the same new filename?</h3>
+<p>The preview will show the duplicate names. It is recommended to check the list before downloading and adjust individual filenames as needed to resolve any conflicts.</p>
 
-                <h3>What happens if two files end up with the same new filename?</h3>
-                <p>The preview will show the duplicate names. It is recommended to check the list before downloading and adjust individual filenames as needed to resolve any conflicts.</p>
+<h2>Conclusion</h2>
+<p>Properly named image files are a small but meaningful investment that pays dividends in SEO, team collaboration, and technical reliability. Instead of renaming files one by one in Windows Explorer or macOS Finder, a purpose-built <strong>bulk image renamer</strong> handles the entire batch in seconds.</p>
+<p>ROCKIMG's Image File Renamer gives you six flexible rename rules, individual editing, a live preview, and a clean ZIP download — all free, all private, all in your browser. Whether you are a photographer standardising a shoot archive, a developer cleaning up an asset library, or a marketer preparing product images for a store, this tool covers every scenario.</p>
 
-                <h2>Conclusion</h2>
-                <p>Properly named image files are a small but meaningful investment that pays dividends in SEO, team collaboration, and technical reliability. Instead of renaming files one by one in Windows Explorer or macOS Finder, a purpose-built <strong>bulk image renamer</strong> handles the entire batch in seconds.</p>
-                <p>ROCKIMG's Image File Renamer gives you six flexible rename rules, individual editing, a live preview, and a clean ZIP download — all free, all private, all in your browser. Whether you are a photographer standardising a shoot archive, a developer cleaning up an asset library, or a marketer preparing product images for a store, this tool covers every scenario.</p>
+<div class="cta">
+    <p>Upload your images and start renaming in seconds.</p>
+    <a href="/image-file-renamer.html" target="_blank">Try Image File Renamer Free</a>
+</div>
 
-                <div class="cta">
-                    <p>Upload your images and start renaming in seconds.</p>
-                    <a href="/image-file-renamer.html" target="_blank">Try Image File Renamer Free</a>
-                </div>
-
-                <h2>Related Tools</h2>
-                <ul>
-                    <li><a href="/image-compressor.html">Image Compressor</a> — reduce image file size without visible quality loss.</li>
-                    <li><a href="/exif-remover.html">EXIF Remover</a> — strip metadata from images before publishing.</li>
-                    <li><a href="/add-captions.html">Add Captions</a> — overlay descriptive text on images for accessibility and sharing.</li>
-                    <li><a href="/images-combine.html">Images Combine</a> — merge multiple images into a single file.</li>
-                </ul>
-                <p class="back-to-blog" style="margin-top:2.5rem;"><a href="/blog.html">← Back to all tutorials</a></p>
+<h2>Related Tools</h2>
+<ul>
+    <li><a href="/image-compressor.html">Image Compressor</a> — reduce image file size without visible quality loss.</li>
+    <li><a href="/exif-remover.html">EXIF Remover</a> — strip metadata from images before publishing.</li>
+    <li><a href="/add-captions.html">Add Captions</a> — overlay descriptive text on images for accessibility and sharing.</li>
+    <li><a href="/images-combine.html">Images Combine</a> — merge multiple images into a single file.</li>
+</ul>
+<p class="back-to-blog" style="margin-top:2.5rem;"><a href="/blog.html">← Back to all tutorials</a></p>
             </article>
         </main>
         <footer class="footer">
