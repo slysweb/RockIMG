@@ -3,6 +3,7 @@ static/
 storage/
 webfonts/
 social-share-image/
+material/
 *.txt
 *.php
 

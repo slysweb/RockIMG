@@ -204,6 +204,45 @@
         .blog-content .back-to-blog a:hover {
             text-decoration: underline;
         }
+        .blog-content .table-scroll {
+            overflow-x: auto;
+            margin: 1.5rem 0 1.75rem;
+            -webkit-overflow-scrolling: touch;
+        }
+        .blog-content .format-comparison-table {
+            width: 100%;
+            min-width: 640px;
+            border-collapse: collapse;
+            font-size: 0.98rem;
+        }
+        .blog-content .format-comparison-table caption {
+            caption-side: top;
+            text-align: left;
+            font-weight: 600;
+            color: #334e68;
+            margin-bottom: 0.75rem;
+            padding: 0;
+        }
+        .blog-content .format-comparison-table th,
+        .blog-content .format-comparison-table td {
+            border: 1px solid #dbeafe;
+            padding: 0.75rem 0.85rem;
+            vertical-align: top;
+            text-align: left;
+        }
+        .blog-content .format-comparison-table thead th {
+            background: #eef5ff;
+            color: #1f3c88;
+            font-weight: 600;
+        }
+        .blog-content .format-comparison-table tbody th[scope="row"] {
+            background: #f8fbff;
+            color: #1f3c88;
+            white-space: nowrap;
+        }
+        .blog-content .format-comparison-table tbody tr:nth-child(even) td {
+            background: #fcfdff;
+        }
         @media (max-width: 768px) {
             .blog-content {
                 padding: 15px;
@@ -502,7 +541,6 @@
                 </div>
             </div>
         </header>
-
 
 
         <main>
