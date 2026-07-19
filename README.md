@@ -73,6 +73,7 @@ Browse the full catalog on [Tools](https://www.rockimg.com/tools.html). Recently
 Our static blog HTML is in a public repository for transparency, easy sharing, and **SEO** (second surface for the same content).
 
 - **Repository:** [github.com/slysweb/rockimg](https://github.com/slysweb/rockimg)
+- **GitHub Pages:** [slysweb.github.io/RockIMG/blog](https://slysweb.github.io/RockIMG/blog/)
 - **Live index:** [rockimg.com/blog](https://www.rockimg.com/blog.html)
 
 Star or watch the repo to get notified when new posts land.
