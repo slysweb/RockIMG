@@ -107,6 +107,28 @@
             font-size: 0.9rem;
             margin-bottom: 1.6rem;
         }
+
+        .blog-content .blog-video {
+            margin: 1.75rem 0;
+        }
+        .blog-content .blog-video-frame {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 8px 24px rgba(15, 23, 42, 0.12);
+            background: #0f172a;
+        }
+        .blog-content .blog-video-frame iframe {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
         .blog-content .tip {
             background-color: #e8f4fd;
             border-left: 4px solid #2196f3;
@@ -590,6 +612,13 @@
     <a href="/mp3-album-cover.html" target="_blank" rel="noopener" style="margin-right:10px;">Add Album Cover to MP3</a>
     <a href="/mp3-cover-extract.html" target="_blank" rel="noopener">MP3 Cover Extract</a>
 </div>
+
+<figure class="blog-video">
+    <div class="blog-video-frame">
+        <iframe src="https://www.youtube.com/embed/QetPdNsKzW4" title="Perfect MP3 Music Library — How to Add and Extract MP3 Album Cover Art" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+    </div>
+    <figcaption>Watch: add album cover art to MP3 files and extract embedded covers with ROCKIMG.</figcaption>
+</figure>
 
 <h2>Why a cover for MP3 files matters</h2>
 <p>Embedded artwork (sometimes called ID3 album art or an APIC frame) travels with the song. When you copy MP3s to a phone, tablet, or USB stick, players read that picture and show it in playlists, lock screens, and car displays. A clear <strong>cover for MP3</strong> libraries makes browsing faster and looks more polished than a generic music note icon.</p>

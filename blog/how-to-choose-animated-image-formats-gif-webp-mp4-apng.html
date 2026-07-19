@@ -109,6 +109,28 @@
             font-size: 0.9rem;
             margin-bottom: 1.6rem;
         }
+
+        .blog-content .blog-video {
+            margin: 1.75rem 0;
+        }
+        .blog-content .blog-video-frame {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 8px 24px rgba(15, 23, 42, 0.12);
+            background: #0f172a;
+        }
+        .blog-content .blog-video-frame iframe {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
         .blog-content .tip {
             background-color: #e8f4fd;
             border-left: 4px solid #2196f3;
@@ -599,6 +621,13 @@
     <p>Need to switch formats? ROCKIMG runs eight animated conversion tools free in your browser — no upload required.</p>
     <a href="/tools.html">Browse Conversion Tools</a>
 </div>
+
+<figure class="blog-video">
+    <div class="blog-video-frame">
+        <iframe src="https://www.youtube.com/embed/Kydo596PKUE" title="GIF, MP4, Animated WebP, or APNG? Comparison and conversion of the four animated image formats" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+    </div>
+    <figcaption>Watch: compare GIF, animated WebP, MP4, and APNG—and how to convert between them with ROCKIMG.</figcaption>
+</figure>
 
 <h2>Full Comparison of the Four Mainstream Animated Formats</h2>
 <p>No single animated format is perfect; the best choice depends on your usage scenario. Below is a clear breakdown of their core differences across four dimensions: compatibility, image quality, file size and functionality.</p>
