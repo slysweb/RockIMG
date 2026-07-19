@@ -13,12 +13,14 @@ Each row is a **real ROCKIMG app page** plus the **article that documents or tea
 | Tool on Rockimg | Blog tutorial |
 | ----------------- | --------------- |
 | [Add Noise](https://www.rockimg.com/add-noise.html) | [How to add noise to an image (Gaussian noise, grain, texture)](https://www.rockimg.com/blog/how-to-add-noise-to-an-image-online.html) |
+| [Adjust Image Brightness](https://www.rockimg.com/adjust-image-brightness.html), [Adjust Image Contrast](https://www.rockimg.com/adjust-image-contrast.html) | [How to adjust image brightness and contrast online](https://www.rockimg.com/blog/how-to-adjust-image-brightness-and-contrast-online.html) |
 | [Add Text to GIF](https://www.rockimg.com/add-text-to-gif.html) | [How to add text to a GIF](https://www.rockimg.com/blog/how-to-add-text-to-gif.html) |
 | [Annotate Image](https://www.rockimg.com/annotate-image.html) | [How to annotate images online (shapes, arrows, text)](https://www.rockimg.com/blog/how-to-annotate-images-online.html) |
 | [Beauty Filter](https://www.rockimg.com/beauty-filter.html) | [Beauty filter online: smooth skin, portraits, face beauty ratio](https://www.rockimg.com/blog/beauty-filter-online-smooth-skin-portrait-guide.html) |
 | [Black and White](https://www.rockimg.com/black-and-white.html) | [How to convert color image to black and white](https://www.rockimg.com/blog/how-to-convert-color-image-to-black-and-white.html) |
 | [Blur Photo](https://www.rockimg.com/blur-photo.html) | [How to blur faces in a photo online](https://www.rockimg.com/blog/how-to-blur-faces-in-a-photo-online.html) |
 | [CCD Style](https://www.rockimg.com/ccd-style.html) | [How to apply a CCD style filter online](https://www.rockimg.com/blog/how-to-apply-ccd-style-filter-online.html) |
+| [Color Blindness Simulator](https://www.rockimg.com/color-blindness-simulator.html) | [How to build color-blind friendly apps with a simulator](https://www.rockimg.com/blog/how-to-build-color-blind-friendly-apps-with-simulator.html) |
 | [GIF Cropper](https://www.rockimg.com/gif-cropper.html) | [How to crop GIFs online](https://www.rockimg.com/blog/how-to-crop-gifs-online.html) |
 | [GIF Meme Maker](https://www.rockimg.com/gif-meme-maker.html) | [How to make GIF memes](https://www.rockimg.com/blog/how-to-make-gif-memes.html) |
 | [Glitch Effect](https://www.rockimg.com/glitch-effect.html) | [How to turn photos into glitch art online](https://www.rockimg.com/blog/how-to-turn-photos-into-glitch-art-online.html) |
@@ -61,7 +63,6 @@ Browse the full catalog on [Tools](https://www.rockimg.com/tools.html). Recently
 | Emoji Combo | [emoji-combo.html](https://www.rockimg.com/emoji-combo.html) |
 | Image Coordinate Picker | [image-coords.html](https://www.rockimg.com/image-coords.html) |
 | Rubbing Effect | [rubbing-effect.html](https://www.rockimg.com/rubbing-effect.html) |
-| Color Blindness Simulator | [color-blindness-simulator.html](https://www.rockimg.com/color-blindness-simulator.html) |
 | Motion Aftereffect Generator | [motion-aftereffect-generator.html](https://www.rockimg.com/motion-aftereffect-generator.html) |
 | Optical Illusion Generator | [optical-illusion-generator.html](https://www.rockimg.com/optical-illusion-generator.html) |
 
